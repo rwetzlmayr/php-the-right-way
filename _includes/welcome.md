@@ -1,44 +1,44 @@
-# Welcome
+# Willkommen
 
-There's a lot of outdated information on the Web that leads new PHP users astray, propagating bad practices and bad
-code. This must stop. _PHP: The Right Way_ is an easy-to-read, quick reference for PHP best practices, accepted coding
-standards, and links to authoritative tutorials around the Web.
+Im Web findet man eine Menge von veralteten Informationen, mit der neue PHP-Anwender in die Irre geführt werden und die
+schlechte Methoden und schlechten Code verbreiten. Das kann nicht so weitergehen. _PHP: Der richtige Weg_ ist eine
+einfach lesbare Schnellreferenz für PHP und enthält die besten Verfahren, anerkannte Code-Standards und Links zu
+maßgeblichen Anleitungen im Web.
 
-## Translations
+## Übersetzungen
 
-_PHP: The Right Way_ is (or soon will be) translated into many different languages:
+_PHP: Der richtige Weg_ wurde (oder wird demnächst) in viele verschiedene Spachen übersetzt:
 
-* [English](http://www.phptherightway.com)
-* [Catalan](http://ca.phptherightway.com)
-* [Chinese](http://wulijun.github.com/php-the-right-way)
-* [Japanese](http://ja.phptherightway.com)
-* [Italian](http://it.phptherightway.com)
-* [Polish](http://pl.phptherightway.com/)
-* [Portuguese](http://br.phptherightway.com/)
-* Russian (Coming Soon)
-* [Spanish](http://es.phptherightway.com)
-* [Ukrainian](http://iflista.github.com/php-the-right-way/)
-* [Bulgarian](http://bg.phptherightway.com/)
+* [Englisch](http://www.phptherightway.com)
+* [Katalanisch](http://ca.phptherightway.com)
+* [Chinesisch](http://wulijun.github.com/php-the-right-way)
+* [Japanisch](http://ja.phptherightway.com)
+* [Italienisch](http://it.phptherightway.com)
+* [Polnisch](http://pl.phptherightway.com/)
+* [Portugiesisch](http://br.phptherightway.com/)
+* Russisch (Demnächst)
+* [Spanisch](http://es.phptherightway.com)
+* [Ukraininisch](http://iflista.github.com/php-the-right-way/)
+* [Bulgarisch](http://bg.phptherightway.com/)
+* [Deutsch](http://rwetzlmayr.github.io/php-the-right-way/)
 
-## Disclaimer
+## Haftungsausschluss
 
-_There is no canonical way to use PHP_. However, this website is a humble display of best practices,
-available options, and good information. It aims to introduce new PHP developers and to rethink seasoned pros with fresh
-ideas.
+_Es gibt keine vorschriftsmäßigen Einsatz von PHP_. Abgesehen davon ist diese Website eine bescheidene Darstellung der
+besten Methoden, möglicher Alternativen und guter Information. Ihr Ziel ist es, neue PHP-Entwickler anzuleiten und altgediente Profis mit frischen Ideen zu versorgen.
 
-This is a living document and will continue to be updated with more helpful information and examples as they become
-available.
+Dieses Dokument lebt und wird fortlaufend mit weiteren hilfreicher Informationen und Beispielen ergänzt werden, sobald sie verfügbar werden.
 
-## How to Contribute
+## Mitarbeiten
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][1]
+Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu machen! [Arbeite auf GitHub mit][1]
 
-## Spread the Word!
+## Verbreite die Botschaft!
 
-_PHP: The Right Way_ has web banner images you can use on your website. Show your support, and let new PHP developers
-know where to find good information!
+Für _PHP: The richtige Weg_ gibt es Bannergrafiken, die du auf deiner Website verwenden kannst. Demonstriere deine
+Unterstützung und zeigen neuen PHP-Entwicklern, wo sie gute Informaionen finden können!
 
-[See Banner Images][2]
+[Bannergrafiken][2]
 
 [1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
 [2]: /banners.html
