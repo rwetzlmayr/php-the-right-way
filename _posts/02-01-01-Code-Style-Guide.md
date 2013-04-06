@@ -2,12 +2,9 @@
 anchor: code_style_guide
 ---
 
-# Code Style Guide {#code_style_guide_title}
+# Stilregeln für den Code  {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+Die PHP-Gemeinschaft ist groß und vielfältig und besteht aus unzähligen Bibliotheken, Frameworks und Bausteinen. Üblicherweise wählen PHP-Entwickler mehrere davon aus und kombiniren sie in einem einzelnen Projekt. Es ist wichtig, dass PHP-Code einem gemeinsamen Stil folgt, um Entwicklern die Kombination von verschiedenen Bibliothken innerhlb ihrer Projekte zu erleichtern.
 
 The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related
 to code-style, but those that do are [PSR-1][psr1], [PSR-12][psr12] and [PSR-4][psr4]. These
