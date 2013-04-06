@@ -30,7 +30,7 @@
     </head>
     <body>
         <nav class="site-navigation">
-            <div class="build-date">Letzte Änderung: {{ site.time }}</div>
+            <div class="build-date">Letzte Änderung: {{ site.time | date "%Y-%m-%d %H:%M" }}</div>
             <ul>
                 <li><a href="/#site-header">Willkommen</a></li>
                 {% assign lastIsChild = false %}
