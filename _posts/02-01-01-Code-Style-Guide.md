@@ -1,3 +1,7 @@
+---
+title: Stilregeln für den Code
+---
+
 # Stilregeln für den Code  {#code_style_guide_title}
 
 Die PHP-Gemeinschaft ist groß und vielfältig und besteht aus unzähligen Bibliotheken, Frameworks und Bausteinen. Üblicherweise wählen PHP-Entwickler mehrere davon aus und kombiniren sie in einem einzelnen Projekt. Es ist wichtig, dass PHP-Code einem gemeinsamen Stil folgt, um Entwicklern die Kombination von verschiedenen Bibliothken innerhlb ihrer Projekte zu erleichtern.
