@@ -1,19 +1,20 @@
 ---
+title: Namespaces
 isChild: true
 ---
 
 ## Namespaces {#namespaces_title}
 
-As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP code may use the same class name as another library. When both libraries are used in the same namespace, they collide and cause trouble.
+Wie oben erwähnt besteht die PHP-Gemeinschaft aus vielen Entwicklern, die eine Menge Code produzieren. Das bedeutet, dass der PHP-Code aus einer Bibliothek die selben Klassennamen verwenden kann wie der Code einer anderen Bibliothek. Wenn beide Bibliotheken im selben Namensraum verwendet werden, entstehen Kollisionen und verursachen Probleme.
 
-_Namespaces_ solve this problem. As described in the PHP reference manual, namespaces may be compared to operating system directories that _namespace_ files; two files with the same name may co-exist in separate directories. Likewise, two PHP classes with the same name may co-exist in separate PHP namespaces. It's as simple as that.
+_Namespaces_ lösen dieses Problem. Laut der Beschreibung im PHP-Handbuch können Namespaces mit den Verzeichnissen vom Dateisystemen verglichen werden, die Namensräume für Dateien bilden; zwei Dateien mit dem selben Namen können in unterschiedlichen Verzeichnissen existieren. Ebenso können zwei PHP-Klassen mit dem selben Namen in getrennten PHP-Namespaces koexistieren. So einfach ist  das.
 
-It is important for you to namespace your code so that it may be used by other developers without fear of colliding with other libraries.
+Für dich ist wichtig, deinen Code in Namensräumen zu ordnen, damit er von anderen Entwicklern ohne Sorge um mögliche Kollisionen mit anderen Bibliotheken verwendet werden kann.
 
-One recommended way to use namespaces is outlined in [PSR-0][psr0], which aims to provide a standard file, class and namespace convention to allow plug-and-play code.
+Ein empfohlene Methode zum Einsatz von Namespaces ist in [PSR-0][psr0] mit dem Ziel einer standardisierten Datei-, Klassen- und Namespace-Konvention für Plug-and-Play-Code umrissen.
 
-* [Read about Namespaces][namespaces]
-* [Read about PSR-0][psr0]
+* [Mehr über Namespaces][namespaces]
+* [Mehr über PSR-0][psr0]
 
-[namespaces]: http://php.net/manual/en/language.namespaces.php
+[namespaces]: http://php.net/manual/de/language.namespaces.php
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
