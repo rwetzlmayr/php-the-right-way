@@ -32,15 +32,15 @@
         <nav class="site-navigation">
             <div class="build-date">Letzte Änderung: {{ site.time | date "%Y-%m-%d %H:%M" }}</div>
             <ul>
-                <li><a href="/#site-header">Willkommen</a></li>
+                <li><a href="#site-header">Willkommen</a></li>
                 {% assign lastIsChild = false %}
                 {% for post in site.posts reversed %}
                     {% if post.isChild and lastIsChild != true %}<ul>{% endif %}
                     {% if lastIsChild and post.isChild != true %}</ul>{% endif %}
-                    <li><a href="/#{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">{{ post.title }}</a>
+                    <li><a href="#{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">{{ post.title }}</a>
                     {% assign lastIsChild = post.isChild %}
                 {% endfor %}
-                <li><a href="/#site-footer">Abspann</a></li>
+                <li><a href="#site-footer">Abspann</a></li>
             </ul>
         </nav>
         <div class="site-content">
