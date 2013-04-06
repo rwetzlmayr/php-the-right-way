@@ -24,19 +24,19 @@ _PHP: Der richtige Weg_ wurde (oder wird demnächst) in viele verschiedene Spach
 
 ## Haftungsausschluss
 
-_Es gibt keine vorschriftsmäßigen Einsatz von PHP_. Abgesehen davon ist diese Website eine bescheidene Darstellung der
+_Es gibt keinen vorschriftsmäßigen Einsatz von PHP_. Abgesehen davon ist diese Website eine bescheidene Darstellung der
 besten Methoden, möglicher Alternativen und guter Information. Ihr Ziel ist es, neue PHP-Entwickler anzuleiten und altgediente Profis mit frischen Ideen zu versorgen.
 
-Dieses Dokument lebt und wird fortlaufend mit weiteren hilfreicher Informationen und Beispielen ergänzt werden, sobald sie verfügbar werden.
+Dieses Dokument lebt und wird fortlaufend mit weiteren hilfreichen Informationen und Beispielen ergänzt, sobald sie verfügbar werden.
 
 ## Mitarbeiten
 
-Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu machen! [Arbeite auf GitHub mit][1]
+Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu machen! [Arbeite auf GitHub mit][1].
 
 ## Verbreite die Botschaft!
 
 Für _PHP: The richtige Weg_ gibt es Bannergrafiken, die du auf deiner Website verwenden kannst. Demonstriere deine
-Unterstützung und zeigen neuen PHP-Entwicklern, wo sie gute Informaionen finden können!
+Unterstützung und zeige neuen PHP-Entwicklern, wo sie gute Informationen finden können!
 
 [Bannergrafiken][2]
 

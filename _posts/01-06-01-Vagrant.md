@@ -4,20 +4,11 @@ isChild: true
 
 ## Vagrant {#vagrant_title}
 
-Running your application on different environments in development and production can lead to strange bugs 
-popping up when you go live. It's also tricky to keep different development environments up to date with the same 
-version for all libraries used when working with a team of developers. 
+Der Betrieb einer Anwendung in zwischen Entwicklung und Produktion unterschiedlichen Umgebungen kann zu seltsamen Bugs führen. Ein Team von Entwicklern auf dem selben Versionstand aller Bibliotheken zu halten kann ebenfalls umständlich werden.
 
-If you are developing on Windows and deploying to Linux (or anything non-Windows) or are developing in a team, you 
-should consider using a virtual machine. This sounds tricky, but using [Vagrant][vagrant] you can set up a simple 
-virtual machine with only a few steps. These base boxes can then be set up manually, or you can use "provisioning" 
-software such as [Puppet][puppet] or [Chef][chef] to do this for you. Provisioning the base box is a great way to 
-ensure that multiple boxes are set up in an identical fashion and removes the need for you to maintain complicated 
-"set up" command lists. You can also "destroy" your base box and recreate it without many manual steps, making it
-easy to create a "fresh" installation.
+Du solltest den Einsatz einer virtuellen Maschine erwägen, wenn du unter Windows entwickelst und auf Linux oder ein anderes Nicht-Windows-Betriebssystem ausrollst oder in einem Team entwickelst. Das klingt kompliziert, aber mit Hilfe von [Vagrant][vagrant] kannst du eine einfache virtuell Maschine in wenigen Schritten einrichten. Diese Basismaschinen kannst du anschliessend manuell aufsetzen oder Software wie [Puppet][puppet] or [Chef][chef] zur "Provisionierung" einsetzen. Eine Basismaschine zu provisionieren ist eine gute Methode, um sicherzustellen, dass mehrere Maschinen identisch konfiguriert sind und reduziert den Bedarf von komplizierten Checklisten für das Setup. Du kannst eine Basismaschine auch ohne manuelle Schritte zerstören und mit einer neuen Installation wieder frisch aufbauen.
 
-Vagrant creates shared folders used to share your code between your host and your virtual machine, meaning you can 
-create and edit your files on your host machine and then run the code inside your virtual machine.
+Vagrant erstellt geteilte Verzeichnisse, um den Code zwischen dem Host und den virtuellen Maschinen zu verteilen. Damit kannst du den Code auf der Hostmaschine bearbeiten und in den virtuellen Maschinen ablaufen lassen.
 
 [vagrant]: http://vagrantup.com/
 [puppet]: http://www.puppetlabs.com/
