@@ -1,15 +1,15 @@
 ---
-title: Schnittstelle für die Kommandozeile
+title: Schnittstelle für die Befehlszeile
 isChild: true
 ---
 
-## Schnittstelle für die Kommandozeile {#command_line_interface_title}
+## Schnittstelle für die Befehlszeile {#command_line_interface_title}
 
-PHP wurde primär für die Erstellung von Web-Anwendungen geschaffen, aber es ist auch beim verfassen von Kommandozeilenprogrammen (CLI; command line interface) nützlich. PHP-Programme für die Kommandozeile können dir helfen, allgemeine Aufgaben wie Softwaretests, Ausrollung und Administratives zu automatisieren.
+PHP wurde primär für die Erstellung von Web-Anwendungen geschaffen, aber es ist auch beim verfassen von Befehlszeilenprogrammen (CLI; command line interface) nützlich. PHP-Programme für die Befehlszeile können dir helfen, allgemeine Aufgaben wie Softwaretests, Ausrollung und Administratives zu automatisieren.
 
 CLI-PHP-Programme sind mächtig, weil sie den Code deiner Anwendung direkt ohne Web-Oberfläche benutzen können. Achte nur darauf, dass deine CLI-Scripts nicht im öffentlichen Webverzeichnis liegen!
 
-Versuche, PHP von der Kommandozeile aus aufzurufen:
+Versuche, PHP von der Befehlszeile aus aufzurufen:
 
 {% highlight bash %}
 > php -i
@@ -17,7 +17,7 @@ Versuche, PHP von der Kommandozeile aus aufzurufen:
 
 Die Option `-i` gibt die PHP-Konfiguration ähnlich wie die Funktion [`phpinfo`][phpinfo] aus.
 
-Die Option `-a` startet eine interaktive Shell ähnlich wie IRB in Ruby oder Pythons interaktive Shell. Es gibt einige andere nützliche [Optionen für die Kommandozeile][cli-options].
+Die Option `-a` startet eine interaktive Shell ähnlich wie IRB in Ruby oder Pythons interaktive Shell. Es gibt einige andere nützliche [Optionen für die Befehlszeile][cli-options].
 
 Schreiben wir doch ein CLI-Programm für "Hello, $name". Erstelle eine Datei `hello.php` und gib diesen Code in die Datei ein:
 
@@ -35,7 +35,7 @@ PHP erstellt zwei spezielle Variable auf Basis der Argument, mit denen dein Scri
 
 Der Ausdruck `exit()` wird mit einer Zahl ungleich Null aufgerufen, um die Shell davon zu informieren, dass der Befehl gescheitert ist. Gebräuchliche Exitcodes findet man [hier][exit-codes].
 
-Starte unser Script von der Kommandozeile:
+Starte unser Script von der Befehlszeile:
 
 {% highlight bash %}
 > php hello.php
@@ -45,8 +45,8 @@ Hello, world
 {% endhighlight %}
 
 
- * [Mehr über den Einsatz von PHP auf der Kommandozeile][php-cli]
- * [Mehr über die Einrichtung von Windows für den Einsatz von PHP auf der Kommandozeile][php-cli-windows]
+ * [Mehr über den Einsatz von PHP auf der Befehlszeile][php-cli]
+ * [Mehr über die Einrichtung von Windows für den Einsatz von PHP auf der Befehlszeile][php-cli-windows]
 
 [phpinfo]: http://php.net/manual/de/function.phpinfo.php
 [cli-options]: http://www.php.net/manual/de/features.commandline.options.php
