@@ -2,14 +2,11 @@
 anchor: dependency_management
 ---
 
-# Dependency Management {#dependency_management_title}
+# Verwaltung von Abhängigkeiten {#dependency_management_title}
 
-There are a ton of PHP libraries, frameworks, and components to choose from. Your project will likely use 
-several of them — these are project dependencies. Until recently, PHP did not have a good way to manage
-these project dependencies. Even if you managed them manually, you still had to worry about autoloaders.
-That is no longer an issue.
+Es gibt eine unüberschaubare Menge von PHP-Bibliotheken, Frameworks und Bausteine, aus denen man wählen kann. In deinem Projekt wirst du wahrscheinlich mehrere davon einsetzen. Bis vor Kurzem hatte PHP keine Methode. um dies Projektabhängigkeiten zu verwalten. Selbst wenn du diese händisch verwaltet hättest, musstest du dich über Autoloader sorgen. Das ist vorbei.
 
-Currently there are two major package management systems for PHP - [Composer] and [PEAR]. Composer is currently
+Zur Zeit gibt es zwei große Paketverwaltungssysteme für PHP - [Composer] und [PEAR]. Composer is currently
 the most popular package manager for PHP, however for a long time PEAR was the primary package manager in use.
 Knowing PEAR's history is a good idea, since you may still find references to it even if you never use it.
 

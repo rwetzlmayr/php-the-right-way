@@ -1,19 +1,18 @@
 ---
-title:   Composer and Packagist
+title: Composer und Packagist
 isChild: true
 anchor:  composer_and_packagist
 ---
 
-## Composer and Packagist {#composer_and_packagist_title}
+## Composer und Packagist {#composer_and_packagist_title}
 
 Composer is the recommended dependency manager for PHP. List your project's dependencies in a `composer.json` file and,
 with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for
 you. Composer is analogous to NPM in the node.js world, or Bundler in the Ruby world.
 
-There is a plethora of PHP libraries that are compatible with Composer and ready to be used in your project. These
-"packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
+Viele PHP-Bibliotheken sind bereits mit Composer kompatibel und bereit für den Einsatz in deinem Projekt. Diese "Pakete" werden bei [Packagist] gelistet, dem offiziellen Verzeichnis von mit Composer kompatiblen PHP-Bibliotheken.
 
-### How to Install Composer
+### Composer installieren
 
 The safest way to download composer is by [following the official instructions](https://getcomposer.org/download/).
 This will verify the installer is not corrupt or tampered with.
@@ -35,7 +34,7 @@ For Windows users the easiest way to get up and running is to use the [ComposerS
 performs a global install and sets up your `$PATH` so that you can just call `composer` from any
 directory in your command line.
 
-### How to Define and Install Dependencies
+### Abhängigkeiten definieren und installieren
 
 Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it
 by hand if you like, or use Composer itself. The `composer require` command adds a project dependency
@@ -55,39 +54,38 @@ you've downloaded that already provide a `composer.json` file:
 composer install
 {% endhighlight %}
 
-Next, add this line to your application's primary PHP file; this will tell PHP to use Composer's
-autoloader for your project dependencies.
+Als nächsten Schritt füge diese Zeile zur primären PHP-Datei deines Projektes hinzu; damit weist du PHP an, den Autloader von Composer für deine Projektabhängigkeiten einzusetzen.
 
 {% highlight php %}
 <?php
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-Now you can use your project dependencies, and they'll be autoloaded on demand.
+Du kannst jetzt Projektabhängigkeiten verwenden, und sie werden automatisch heruntergeladen.
 
-### Updating your dependencies
+### Abhängigkeiten aktualisieren
 
-Composer creates a file called `composer.lock` which stores the exact version of each package it
-downloaded when you first ran `composer install`. If you share your project with others,
-ensure the `composer.lock` file is included, so that when they run `composer install` they'll
-get the same versions as you.  To update your dependencies, run `composer update`. Don't use
-`composer update` when deploying, only `composer install`, otherwise you may end up with different
+Composer erzeugt eine Datei `composer.lock`, in der die genauen Versionen jedes Pakets zu dem Zeitpunkt
+gespeichert sind, an dem du das erste Mal `composer install` ausgeführt hast. Wenn du dein Projekt mit
+anderen Programmierern teilst und die Datei `composer install` in das verteilte Produkt aufnimmst,
+erhalten sie die selbe Version wie du. Starte  `composer update`, um die Abhängigkeiten zu aktualisieren.
+Don't use `composer update` when deploying, only `composer install`, otherwise you may end up with different
 package versions on production.
 
-This is most useful when you define your version requirements flexibly. For instance, a version
-requirement of `~1.8` means "anything newer than `1.8.0`, but less than `2.0.x-dev`". You can also use
-the `*` wildcard as in `1.8.*`. Now Composer's `composer update` command will upgrade all your
-dependencies to the newest version that fits the restrictions you define.
+Das ist auch sehr nützlich, falls du deine Versionsansprüche flexibel definiert hast. Beispielsweise bedeutet
+eine erforderliche Version von ~1.8 "irgend eine Version, die neuer ist als 1.8, aber niedriger als 2.0.x-dev".
+Der Composer-Befehl `composer update` wird alle Abhängigkeiten auf die neueste Version aktualisieren, welche
+die definierten Einschränkungen erfüllen.
 
 ### Update Notifications
 
 To receive notifications about new version releases you can sign up for [libraries.io], a web service
 that can monitor dependencies and send you alerts on updates.
 
-### Checking your dependencies for security issues
+### Abhängigkeiten auf Sicherheitsprobleme prüfen
 
-The [Security Advisories Checker] is a web service and a command-line tool, both will examine your `composer.lock`
-file and tell you if you need to update any of your dependencies.
+Der [Security Advisories Checker] ist ein Webdienst und ein Befehlszeilenwerkzeug. Er untersucht die Datei
+`composer.lock` und berichtet, ob eine Abhängigkeit aktualisiert werden muss.
 
 ### Handling global dependencies with Composer
 
@@ -103,7 +101,7 @@ This will create a `~/.composer` folder where your global dependencies reside. T
 packages' binaries available everywhere, you'd then add the `~/.composer/vendor/bin` folder to your
 `$PATH` variable.
 
-* [Learn about Composer]
+* [Mehr über Composer]
 
 [Packagist]: https://packagist.org/
 [Twig]: https://twig.symfony.com/
