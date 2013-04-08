@@ -36,19 +36,19 @@ directory in your command line.
 
 ### Abhängigkeiten definieren und installieren
 
-Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it
-by hand if you like, or use Composer itself. The `composer require` command adds a project dependency
-and if you don't have a `composer.json` file, one will be created. Here's an example that adds [Twig]
-as a dependency of your project.
+Composer verfolgt die Abhängigkeiten deines Projekts in einer Datei namens `composer.json`. Du kannst
+diese Datei händisch oder mit Composer verwalten. Der Befehl `composer require` fügt eine
+Projektabhängigkeit hinzu. Wenn die Datei `composer.json` noch nicht existiert, wird sie erstellt.
+Im folgenden Beispiel wird [Twig] als Abhängigkeit zu deinem Projekt hinzugefügt.
 
 {% highlight console %}
 composer require twig/twig:^2.0
 {% endhighlight %}
 
-Alternatively, the `composer init` command will guide you through creating a full `composer.json` file
-for your project. Either way, once you've created your `composer.json` file you can tell Composer to
-download and install your dependencies into the `vendor/` directory. This also applies to projects
-you've downloaded that already provide a `composer.json` file:
+Alternative führt dich der Befehl `composer init` durch die Erstellung einer vollständigen `composer.json`
+für dein Projekt. In jedem Fall kannst du nach der Erzeugung der Datei `composer.json` Composer anweisen,
+die Abhängigkeiten deines Projekts in das Verzeichnis `vendors/` herunterzuladen und zu installieren. Das
+trifft auch auf heruntergeladene Projekte zu, die selbst bereits eine Datei `composer.json` bereitstellen:
 
 {% highlight console %}
 composer install
