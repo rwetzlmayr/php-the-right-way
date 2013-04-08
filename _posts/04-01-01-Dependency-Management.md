@@ -1,10 +1,14 @@
-# Dependency Management {#dependency_management_title}
+---
+title: Verwaltung von Abhängigkeiten
+---
 
-There are a ton of PHP libraries, frameworks, and components to choose from. Your project will likely use several of them — these are project dependencies. Until recently, PHP did not have a good way to manage these project dependencies. Even if you managed them manually, you still had to worry about autoloaders. No more.
+# Verwaltung von Abhängigkeiten {#dependency_management_title}
 
-Currently there are two major package management systems for PHP - Composer and PEAR. Which one is right for you? The answer is both.
+Es gibt eine unüberschaubare Menge von PHP-Bibliotheken, Frameworks und Bausteine, aus denen man wählen kann. In deinem Projekt wirst du wahrscheinlich mehrere davon einsetzen. Bis vor Kurzem hatte PHP keine Methode. um dies Projektabhängigkeiten zu verwalten. Selbst wenn du diese händisch verwaltet hättest, musstest du dich über Autoloader sorgen. Das ist vorbei.
 
- * Use **Composer** when managing dependencies for a single project.
- * Use **PEAR** when managing dependencies for PHP as a whole on your system.
+Zur Zeit gibt es zwei große Paketverwaltungssysteme für PHP - Composer und PEAR. Welches ist das richtige für dich? Beide, lautete die Antwort.
 
-In general, Composer packages will be available only in the projects that you explicitly specify whereas a PEAR package would be available to all of your PHP projects. While PEAR might sound like the easier approach at first glance, there are advantages to using a project-by-project approach to your dependencies.
+ * Verwende **Composer** für die Verwaltung von Abhängigkeiten in einem einzelnen Projekt.
+ * verwende **PEAR** für die Verwaltung von Abhängigkeiten von PHP in einem Gesamtsystem.
+
+Allgemein sind Pakete aus Composer nur in den Projekten verfügbar, die du explizit angibst, während Pakete aus PEAR in allen deinen PHP-Projekten verfügbar sind. Auf den ersten Blick mag der PEAR-Ansatz einfacher erscheinen, aber der projektspezifische Zugang zu Abhängigkeiten hat Vorteile.
