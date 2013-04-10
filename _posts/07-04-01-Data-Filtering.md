@@ -1,68 +1,49 @@
 ---
 isChild: true
+title: Daten filtern
 ---
 
-## Data Filtering {#data_filtering_title}
+## Daten filtern {#data_filtering_title}
 
-Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate
-foreign input before using it in code. The `filter_var` and `filter_input` functions can sanitize text and validate text formats (e.g.
-email addresses).
+Vertraue niemals (niemals!) Eingaben in deinen PHP-Code von außen. Bereinige und validiere externe Eingaben, bevor du sie in deinem Code verwendest. Die Funktionen `filter_var` und `filter_input` können Text bereinigen und Textformate wie zum Beispiel E-Mail-Adressen validieren.
 
-Foreign input can be anything: `$_GET` and `$_POST` form input data, some values in the `$_SERVER`
-superglobal, and the HTTP request body via `fopen('php://input', 'r')`. Remember, foreign input is not
-limited to form data submitted by the user. Uploaded and downloaded files, session values, cookie data,
-and data from third-party web services are foreign input, too.
+Eine Eingabe von außen können alles mögliche  sein: Formulareingaben über `$_GET` und `$_POST, einige Werte im Superglobal `$_SERVER`
+und der Inhalt des HTTP-Requests über `fopen('php://input', 'r')`. Danke daran: Fremdeingaben ist nicht beschränkt auf Formulardaten, die ein Benutze absendet. Heraufgeladene und heruntergeladene Dateien, Sessionwerte, Daten aus Cookies und Daten von dritter Seite wie Webservices sind auch Fremdeingaben.
 
-While foreign data can be stored, combined, and accessed later, it is still foreign input. Every
-time you process, output, concatenate, or include data in your code, ask yourself if
-the data is filtered properly and can it be trusted.
+Während Fremdeingaben gespeichert, kombiniert und später verwendet werden können, bleiben sie noch immer Fremdeingaben. Frage dich jedes  Mal, ob die Daten korrekt gefiltert sind, wenn du sie in deinem Code verarbeitest, ausgibst, verbindest oder einbaust.
 
-Data may be _filtered_ differently based on its purpose. For example, when unfiltered foreign input is passed
-into HTML page output, it can execute HTML and JavaScript on your site! This is known as Cross-Site
-Scripting (XSS) and can be a very dangerous attack. One way to avoid XSS is to sanitize all user-generated
-data before outputting it to your page by removing HTML tags with the `strip_tags` function or escaping
-characters with special meaning into their respective HTML entities with the `htmlentities`
-or `htmlspecialchars` functions.
+Daten können - abhängig von der Verwendung - unterschiedlich _gefiltert_ werden. Werden ungefilterte Fremdeingaben in die HTML-Seite eingeschleust, können HTML und JavaScript auf deiner Site ausgeführt werden. Das nennt man Cross-Site Scripting (XSS), eine sehr gefährliche Angriffsmethode. Eie Art, um XSS zu vermeiden, ist, alle vom Benutzer erzeugten Daten vor der Ausgebe zu bereinigen. Dazu kannst du entweder alle HTML-Tags mit der Funktion `strip_tags` entfernen oder Zeichen mit spezieller Bedeutung mit Hilfe der Funktionen `htmlentities` oder `htmlspecialchars` in die entsprechenden HTML-Entitäten umwandeln.
 
-Another example is passing options to be executed on the command line. This can be extremely dangerous
-(and is usually a bad idea), but you can use the built-in `escapeshellarg` function to sanitize the executed
-command's arguments.
+Ein weiteres Beispiel ist die Weitergabe von Optionen an die Ausführung über die Befehlszeile. Das kann extrem gefährlich sein und ist ganz allgemein eine schlechte Idee. Du kannst die eingebaute Funktion `escapeshellarg` verwenden, um die Argumente des ausgeführten Befehls zu bereinigen.
 
-One last example is accepting foreign input to determine a file to load from the filesystem. This can be exploited by
-changing the filename to a file path. You need to remove "/", "../", [null bytes][6], or other characters from the file path so it can't
-load hidden, non-public, or sensitive files.
+Ein letztes Beispiel ist die Verwendung von Fremdeingaben zur Bestimmung einer Datei, die vom Dateisystem geladen wird. Das kann ausgenutzt werden, um an Stelle eines Dateinamens einen Dateipfad zu erreichen. Du musst "/", "../", [Null-Bytes][6] und andere Zeichen aus dem Dateipfad entfernen, damit nicht versteckte, private und heikle Dateien geladen werden.
 
-* [Learn about data filtering][1]
-* [Learn about `filter_var`][4]
-* [Learn about `filter_input`][5]
-* [Learn about handling null bytes][6]
+* [Mehr über Datenfilterung][1]
+* [Mehr über `filter_var`][4]
+* [Mehr über `filter_input`][5]
+* [Mehr über die Behandlung von Null-Bytes][6]
 
-### Sanitization
+### Bereinigung
 
-Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
+Mit der Bereinigung entfernt oder entschärft man illegale oder unsichere Zeichen aus Fremdeingaben.
 
-For example, you should sanitize foreign input before including the input in HTML or inserting it
-into a raw SQL query. When you use bound parameters with [PDO](#databases), it will
-sanitize the input for you.
+Zum Beispiel solltest du Fremdeingaben bereinigen, bevor du die Eingabe in HTML einbaust oder sie in einer SQL-Abfrage verwendest. Wenn du gebundene Parameter mit [PDO](#databases) verwendest, wird PDO die Eingaben für dich bereinigen.
 
-Sometimes it is required to allow some safe HTML tags in the input when including it in the HTML
-page. This is very hard to do and many avoid it by using other more restricted formatting like
-Markdown or BBCode, although whitelisting libraries like [HTML Purifier][html-purifier] exists for
-this reason.
+Manchmal ist es nöitg einige sichere HTML-Tags in der Eingabe zu erlauben. Das ist sehr schwierig und wird oft vermieden. Als Ausweichlösung werden Markdown, Textile oder BBCode verwendet, obwohl Whitelisting-Bibliotheken wie [HTML Purifier][html-purifier] aus diesem Grund existieren.
 
-[See Sanitization Filters][2]
 
-### Validation
+[Siehe Filter zur Bereinigung][2]
 
-Validation ensures that foreign input is what you expect. For example, you may want to validate an
-email address, a phone number, or age when processing a registration submission.
+### Validierung
 
-[See Validation Filters][3]
+Validierung stellt sicher, dass Fremdeingaben den Erwartungen entsprechen. Zum Beispiel kannst du eine E-Mail-Adresse, eine Telefonnummer oder ein Alter validieren, wenn du eine Registrierungsanmeldung verarbeitest.
 
-[1]: http://www.php.net/manual/en/book.filter.php
-[2]: http://www.php.net/manual/en/filter.filters.sanitize.php
-[3]: http://www.php.net/manual/en/filter.filters.validate.php
-[4]: http://php.net/manual/en/function.filter-var.php
-[5]: http://www.php.net/manual/en/function.filter-input.php
-[6]: http://php.net/manual/en/security.filesystem.nullbytes.php
+[Siehe Filter zur Validierung][3]
+
+[1]: http://www.php.net/manual/de/book.filter.php
+[2]: http://www.php.net/manual/de/filter.filters.sanitize.php
+[3]: http://www.php.net/manual/de/filter.filters.validate.php
+[4]: http://php.net/manual/de/function.filter-var.php
+[5]: http://www.php.net/manual/de/function.filter-input.php
+[6]: http://php.net/manual/de/security.filesystem.nullbytes.php
 [html-purifier]: http://htmlpurifier.org/

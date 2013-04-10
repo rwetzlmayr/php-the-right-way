@@ -1,15 +1,12 @@
 ---
 isChild: true
+title: Konfigurationsdateien
 ---
 
-## Configuration Files {#configuration_files_title}
+## Konfigurationsdateien {#configuration_files_title}
 
-When creating configuration files for your applications, best practices recommend that one of the following methods 
-be followed:
+Wenn du Konfigurationsdateien erstellt, empfiehlt sich als beste Vorgehensweise eine der folgenden Methoden:
 
-- It is recommended that you store your configuration information where it cannot be accessed directly and pulled in 
-via the file system.
-- If you must store your configuration files in the document root, name the files with a `.php` extension. This 
-ensures that, even if the script is accessed directly, it will not be outputed as plain text.
-- Information in configuration files should be protected accordingly, either through encryption or group/user file 
-system permissions
+- Es ist empfehlenswert, Konfigurationsinformationen dort zu speichern, wo sie nicht direkt über das Dateisystem zugreifbar sind.
+- Wenn du Konfigurationsdateien im Documentroot speichern musst, gib ihnen die Erweiterung `.php`. Damit ist sichergestellt, dass sie auch beim direktem Zugriff nicht als einfacher Text ausgegeben werden.
+- Die Information in Konfigurationsdateien sollte entweder durch Verschlüsselung oder durch Gruppen-/Nutzerberechtigungen des Dateisystems geschützt werden.
