@@ -1,8 +1,10 @@
 ---
-title:  Servers and Deployment
+title: Server und Ausrollung
 anchor: servers_and_deployment
 ---
 
 # Servers and Deployment {#servers_and_deployment_title}
 
-PHP applications can be deployed and run on production web servers in a number of ways.
+# Server und Ausrollung {#servers_and_deployment_title}
+
+PHP-Anwendungen können auf verschiedene Arten auf Server ausgerollt und betrieben werden.
