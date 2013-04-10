@@ -4,15 +4,16 @@ isChild: true
 anchor:  date_and_time
 ---
 
-## Date and Time {#date_and_time_title}
+## Datum und Zeit {#date_and_time_title}
 
-PHP has a class named DateTime to help you when reading, writing, comparing or calculating with date and time. There
-are many date and time related functions in PHP besides DateTime, but it provides nice object-oriented interface to
-most common uses. It can handle time zones, but that is outside this short introduction.
+PHP beinhaltet eine Klasse namens DateTime, die beim Lesen, Schreiben, Vergleichen und Berechnen
+von Datum und Zeit hilft. Es gibt neben DateTime viele weitere Funktionen mit Bezug zu Datum und
+Zeit in PHP, aber die Klasse bietet eine schöne objektorientierte Schnittstelle für die häufigsten
+Anwendungsfälle. Sie kann auch Zeitzonen verarbeiten, das ist allerdings nicht Inhalt dieser kurzen Einführung.
 
-To start working with DateTime, convert raw date and time string to an object with `createFromFormat()` factory method
-or do `new DateTime` to get the current date and time. Use `format()` method to convert DateTime back to a string for
-output.
+Konvertiere einen unformatierten Datums- und Zeitstring mit der Factory-Methode `createFromFormat()`
+oder verwende `new DateTime` für die aktuelle Zeit und das aktuelle Datum, um mit DateTime zu beginnen.
+Verwende die Methode `format()`, um ein DateTime-Objeckt wieder in einen String zur Ausgabe zu konvertieren.
 
 {% highlight php %}
 <?php
@@ -22,10 +23,11 @@ $start = DateTime::createFromFormat('d. m. Y', $raw);
 echo 'Start date: ' . $start->format('Y-m-d') . "\n";
 {% endhighlight %}
 
-Calculating with DateTime is possible with the DateInterval class. DateTime has methods like `add()` and `sub()` that
-take a DateInterval as an argument. Do not write code that expect same number of seconds in every day, both daylight
-saving and timezone alterations will break that assumption. Use date intervals instead. To calculate date difference
-use the `diff()` method. It will return new DateInterval, which is super easy to display.
+Die Klasse DateInterval ermöglicht Berechnungen mit DateTime. DateTime besitzt Methoden wie `add()` and
+`sub()`, die ein DateTime-Intervall als Argument akzeptieren. Schreibe keinen Code der annimmt, dass jeder
+Tag die selbe Zahl von Sekunden dauert. Sowohl Sommerzeit-/Winterzeitwechsel als auch Zeitzonenwechsel
+verletzen diese Annahme. Verende stattdessen DateInterval. Verwenden die Methode `diff()`, um
+Datumsunterschiede zu berechnen. Das Ergebnis ist ein DateInterval, das sehr einfach anzuzeigen ist.
 
 {% highlight php %}
 <?php
@@ -38,7 +40,7 @@ echo 'Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n"
 // Difference: 1 month, 6 days (total: 37 days)
 {% endhighlight %}
 
-On DateTime objects you can use standard comparison:
+Du kannst herkömmliche Vergleichsoperatoren auf DateTime-Objekte anwenden:
 
 {% highlight php %}
 <?php
@@ -47,8 +49,8 @@ if ($start < $end) {
 }
 {% endhighlight %}
 
-One last example to demonstrate the DatePeriod class. It is used to iterate over recurring events. It can take two
-DateTime objects, start and end, and the interval for which it will return all events in between.
+Ein letztes Beispiel zeigt die Klasse DatePeriod. Sie wird verwendet, um über wiederkehrende Ereignisse zu
+iterieren. Sie akzeptiert zwei DateTome-Objekt für Beginn und Ende und ein Intervall und gibt alle Ereignisse dazwischen zurück.
 
 {% highlight php %}
 <?php
@@ -63,8 +65,8 @@ foreach ($periodIterator as $date) {
 
 A popular PHP API extension is [Carbon](https://carbon.nesbot.com/). It inherits everything in the DateTime class, so involves minimal code alterations, but extra features include Localization support, further ways to add, subtract and format a DateTime object, plus a means to test your code by simulating a date and time of your choosing.
 
-* [Read about DateTime][datetime]
-* [Read about date formatting][dateformat] (accepted date format string options)
+* [Mehr über DateTime][datetime]
+* [Mehr über Datumsformatierung][dateformat] (gültige Formatstrings für Datumswerte)
 
 [datetime]: https://secure.php.net/book.datetime
 [dateformat]: https://secure.php.net/function.date
