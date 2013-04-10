@@ -1,12 +1,10 @@
 ---
 isChild: true
+title: Grundlagen
 ---
 
-## The Basics {#the_basics_title}
+## Grundlagen {#the_basics_title}
 
-PHP is a vast language that allows coders of all levels the ability to produce code not only quickly, but efficiently. 
-However while advancing through the language, we often forget the basics that we first learnt (or overlooked) in favor 
-of short cuts and/or bad habits. To help combat this common issue, this section is aimed at reminding coders of the 
-basic coding practices within PHP.
+PHP ist einer umfangreiche Sprache, mit der Programmierer Code schnell und effizient erstellen können. Mit zunehmendem Gebrauch der Sprache vergessen wir oft die Grundlagen im Austausch gegen Abkürzungen und schlechte Gewohnheiten. Dieser Abschnitt dient dazu, Programmierer wieder an grundlegende Programmiermethoden von PHP zu erinnern und dieses Problem zu bekämpfen.
 
-* Continue reading on [The Basics](/pages/The-Basics.html)
+* Weiterlesen bei [Grundlagen](./pages/The-Basics.html)
