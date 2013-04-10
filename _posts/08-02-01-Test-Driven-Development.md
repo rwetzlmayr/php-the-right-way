@@ -1,58 +1,45 @@
 ---
 isChild: true
+title: Testgetriebene Entwicklung
 ---
 
-## Test Driven Development {#test_driven_development_title}
+## Testgetriebene Entwicklung {#test_driven_development_title}
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
+Aus [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
 > Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes a failing automated test case that defines a desired improvement or new function, then produces code to pass that test and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence
 
-There are several different types of testing that you can do for your application
+Du kannst diene Anwendung auf verschiedene Arten testen.
 
-### Unit Testing
+### Unit-Tests
 
-Unit Testing is a programming approach to ensure functions, classes and methods are working as
-expected, from the point you build them all the way through the development cycle. By checking
-values going in and out of various functions and methods, you can make sure the internal logic is
-working correctly. By using Dependency Injection and building "mock" classes and stubs you can verify that dependencies are correctly used for even better test coverage.
+Unit-Tests sind ein Entwicklungsansatz, der sicherstellt, dass Funktionen, Klassen und Methoden wie erwartet arbeiten von Beginn der Entwicklung über den ganzen Entwicklungszyklus. Durch die Überprüfung von Werten, die als Ein- und Ausgabe von Funktionen und Methoden fungieren, kannst du die Korrektheit der inneren Logik sicherstellen. Über Dependency Injection, "Attrappen"-Klassen und Funktionsstummel kannst du die Testabdeckung erhöhen und verifizieren, dass Abhängigkeiten korrekt verwendet werden.
 
-When you create a class or function you should create a unit test for each behavior it must have. At a very basic level you should
-make sure it errors if you send it bad arguments and make sure it works if you send it valid arguments.
-This will help ensure that when you make changes to this class or function later on in the development
-cycle that the old functionality continues to work as expected. The only alternative to this would be
-var_dump() in a test.php, which is no way to build an application - large or small.
+Beim Bau einer Klasse oder Funktion solltest du einen Unit-Test für jedes Verhalten schaffen. Zumindest solltest du sicherstellen, dass bei ungültigen Eingabewerten Fehler passieren und die Funktion bei gültigen Argumenten funktioniert. Damit ist sichergestellt, dass alte Funktionalität erhalten bleibt, wenn du diese Klasse später änderst. Die einzige Alternative wäre var_dump() in einer test.php, und so baut man keine Anwendung - ob klein oder groß.
 
-The other use for unit tests is contributing to open source. If you can write a test that shows broken
-functionality (i.e. fails), then fix it, and show the test passing, patches are much more likely to be accepted. If
-you run a project which accepts pull requests then you should suggest this as a requirement.
+Die andere Anwendung für Unit-Tests ist als Beitrag zu Open Source. Wenn du einen Unit-Test schreiben kannst, der zeigt, dass eine Funktionalität fehlerhaft ist und das dann mit durchlaufendem Testergebnis korrigierst, werden Patches wahrscheinlicher akzeptiert. Wenn du ein Projekt betreibst, das Pull Requests akzeptiert, solltest du das als Erfordernis empfehlen.
 
-[PHPUnit](http://phpunit.de) is the de-facto testing framework for writing unit tests for PHP
-applications, but there are several alternatives
+[PHPUnit](http://phpunit.de) ist das De-Facto Testframework zum Erstellen von Unit-Tests für PHP, aber es gibt einige Alternativen:
 
 * [SimpleTest](http://simpletest.org)
 * [Enhance PHP](http://www.enhance-php.com/)
 * [PUnit](http://punit.smf.me.uk/)
 * [atoum](https://github.com/atoum/atoum)
 
-### Integration Testing
+### Integrationstests
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
+Aus [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
 > Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
-Many of the same tools that can be used for unit testing can be used for integration testing as many
-of the same principles are used.
+Viele der gleichen Werkzeuge für Unit-Tests können auch für Integrationstests verwendet werden da dieselben Prinzipien verwendet werden.
 
-### Functional Testing
+### Funktionaler Test
 
-Sometimes also known as acceptance testing, functional testing consists of using tools to create automated
-tests that actually use your application instead of just verifying that individual units of code are behaving
-correctly and that individual units can speak to each other correctly. These tools typically work using real
-data and simulating actual users of the application.
+Funktionale Test oder Akzeptanztest bestehen aus Werkzeugen, mit denen automatisierte Tests erstellt werden können, die deine Anwendung tatsächlich benutzen, anstatt nur das korrekte Verhalten einzelner Codeeinheiten und deren Verständigung untereinander zu verifizieren. Diese Werkzeuge arbeiten typischerweise mit Echtdaten und simulieren tatsächliche Anwender der Applikation.
 
-#### Functional Testing Tools
+#### Funktionale Testwerkzeuge
 
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
-* [Codeception](http://codeception.com) is a full-stack testing framework that includes acceptance testing tools
+* [Codeception](http://codeception.com) ist ein vollständiges Testframework, das Werkzeuge für Akzeptanztests inkludiert
