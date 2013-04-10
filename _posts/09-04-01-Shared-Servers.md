@@ -1,7 +1,10 @@
 ---
 isChild: true
+title: Shared Hosting
 ---
 
-## Shared Servers {#shared_servers_title}
+## Shared Hosting {#shared_servers_title}
 
-PHP has shared servers to thank for its popularity. It is hard to find a host without PHP installed, but be sure it's the latest version. Shared servers allow you and other developers to deploy websites to a single machine. The upside to this is that it has become a cheap commodity. The downside is that you never know what kind of a ruckus your neighboring tenants are going to create; loading down the server or opening up security holes are the main concerns. If your project's budget can afford to avoid shared servers you should.
+PHP verdankt Shared Hosting seine Popularität. Man findet kaum einen Host ohne installiertes PHP, aber achte darauf, dass es die aktuelle Version ist.
+
+Bei Shared Hosting starten du und andere Entwickler Anwendung auf einer einzigen Maschine. Der Vorteil ist, dass es zu einer billigen Massenware wurde. Der Nachteil ist, dass du nie weißt, welche Art von Krawall deine Mitbewohner anrichten; Überlast auf dem Server oder offenen Sicherheitslücken sind die hauptsächlichen Bedenken. Wenn es dein Budget erlaubt, solltest du Shared Hosting meiden.
