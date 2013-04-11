@@ -5,7 +5,7 @@ title: Baue deine Anwendung
 
 ## Baue und verteile deine Anwendung {#build_title}
 
-Wenn du das Datenbankschema manuelle änderst oder deine Tests manuell startest, bevor du deine Dateien (manuell) aktualisierst, denke noch Mal nach! Mit jeder manuellen Aufgabe, die man für die Ausrollung einer neuen Version deiner Anwendung benötigt steigen die Chancen für potentiell fatale Fehler. Ob es um ein einfaches Update, einen umfassenden Build-Prozess oder sogar um eine kontinuierliche Integrationsstrategie geht, [build automation](http://en.wikipedia.org/wiki/Build_automation) ist dein Freund.
+Wenn du das Datenbankschema manuelle änderst oder deine Tests manuell startest, bevor du deine Dateien (manuell) aktualisierst, denke noch Mal nach! Mit jeder manuellen Aufgabe, die man für die Ausrollung einer neuen Version deiner Anwendung benötigt steigen die Chancen für potentiell fatale Fehler. Ob es um ein einfaches Update, einen umfassenden Build-Prozess oder sogar um eine kontinuierliche Integrationsstrategie geht, [Build-Automation](http://en.wikipedia.org/wiki/Build_automation) ist dein Freund.
 
 Unter den Aufgaben, die du automatisieren kannst, sind etwa:
 

@@ -35,7 +35,7 @@ Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu 
 
 ## Verbreite die Botschaft!
 
-Für _PHP: The richtige Weg_ gibt es Bannergrafiken, die du auf deiner Website verwenden kannst. Demonstriere deine
+Für _PHP: Der richtige Weg_ gibt es Bannergrafiken, die du auf deiner Website verwenden kannst. Demonstriere deine
 Unterstützung und zeige neuen PHP-Entwicklern, wo sie gute Informationen finden können!
 
 [Bannergrafiken][2]
