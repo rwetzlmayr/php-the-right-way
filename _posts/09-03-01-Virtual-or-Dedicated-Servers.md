@@ -22,7 +22,7 @@ PHP und Apache haben eine lange gemeinsame Geschichte. Apache ist konfigurierbar
 Apache hat einige Möglichkeiten, um PHP zu starten. Die geläufigste und einfachste ist das [Prefork MPM](http://httpd.apache.org/docs/2.4/mod/prefork.html) mit mod_php5. Zwar ist es nicht die effizienteste, aber die einfachste Methode der Installation und des Betriebs. Es ist wahrscheinlich die beste Wahl wenn du nicht zu tief in die Serveradministration einsteigen möchtest. Beachte, dass mod_php das Prefork MPM erfordert.
 
 Alternativ kannst du für mehr Leistung und Stabilität das selbe FPM-System wie nginx einsetzen und das [Worker MPM](http://httpd.apache.org/docs/2.4/mod/worker.html) oder das [Event MPM](http://httpd.apache.org/docs/2.4/mod/event.html) mit mod_fastcgi oder mod_fcgid verwenden. Diese Konfiguration wird signifikant effizienter mit dem Speicher umgehen und schneller sein, aber mehr Arbeit bei der Installation machen.
-* [Read more on Apache](http://httpd.apache.org/)
-* [Read more on Multi-Processing Modules](http://httpd.apache.org/docs/2.4/mod/mpm_common.html)
-* [Read more on mod_fastcgi](http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html)
-* [Read more on mod_fcgid](http://httpd.apache.org/mod_fcgid/)
+* [Mehr über Apache](http://httpd.apache.org/)
+* [Mehr über Multi-Processing-Module](http://httpd.apache.org/docs/2.4/mod/mpm_common.html)
+* [Mehr über mod_fastcgi](http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html)
+* [Mehr über mod_fcgid](http://httpd.apache.org/mod_fcgid/)
