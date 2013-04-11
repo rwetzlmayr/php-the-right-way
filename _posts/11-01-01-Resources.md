@@ -1,11 +1,14 @@
-# Resources {#resources_title}
+---
+title: Ressourcen
+---
+# Ressourcen {#resources_title}
 
-## From the Source
+## Von der Quelle
 
-* [PHP Website](http://php.net/)
-* [PHP Documentation](http://php.net/docs.php)
+* [PHP-Website](http://php.net/)
+* [PHP-Dokumentation](http://php.net/docs.php)
 
-## People to Follow
+## Folgenswerte Menschen
 
 * [Rasmus Lerdorf](http://twitter.com/rasmus)
 * [Fabien Potencier](http://twitter.com/fabpot)
@@ -17,16 +20,16 @@
 * [Anthony Ferrara](http://twitter.com/ircmaxell)
 * [Nikita Popov](http://twitter.com/nikita_ppv)
 
-## Mentoring
+## Beratung
 
-* [phpmentoring.org](http://phpmentoring.org/) - Formal, peer to peer mentoring in the PHP community.
+* [phpmentoring.org](http://phpmentoring.org/) - Formelle Beratung durch Kollegen in der PHP-Community.
 
-## PHP PaaS Providers
+## Anbieter für PHP PaaS
 
 * [PagodaBox](https://pagodabox.com/)
 * [AppFog](https://appfog.com/)
 * [Heroku](https://heroku.com)
-  (PHP support is undocumented but based on stable Facebook partnership [[link]](http://net.tutsplus.com/tutorials/php/quick-tip-deploy-php-to-heroku-in-seconds/))
+  (Unterstützung für PHP ist undokumentiert, basiert aber auf einer stabilen Parterschaft mit Facebook [[link]](http://net.tutsplus.com/tutorials/php/quick-tip-deploy-php-to-heroku-in-seconds/))
 * [fortrabbit](http://fortrabbit.com/)
 * [Engine Yard Orchestra PHP Platform](http://www.engineyard.com/products/orchestra/)
 * [Red Hat OpenShift Platform](http://www.redhat.com/products/cloud-computing/openshift/)
