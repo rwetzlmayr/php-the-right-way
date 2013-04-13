@@ -7,7 +7,7 @@ maßgeblichen Anleitungen im Web.
 
 ## Übersetzungen
 
-_PHP: Der richtige Weg_ wurde (oder wird demnächst) in viele verschiedene Spachen übersetzt:
+_PHP: Der richtige Weg_ wurde in viele verschiedene Spachen übersetzt:
 
 * [Englisch](http://www.phptherightway.com)
 * [Katalanisch](http://ca.phptherightway.com)
@@ -16,7 +16,6 @@ _PHP: Der richtige Weg_ wurde (oder wird demnächst) in viele verschiedene Spach
 * [Italienisch](http://it.phptherightway.com)
 * [Polnisch](http://pl.phptherightway.com/)
 * [Portugiesisch](http://br.phptherightway.com/)
-* Russisch (Demnächst)
 * [Spanisch](http://es.phptherightway.com)
 * [Ukraininisch](http://iflista.github.com/php-the-right-way/)
 * [Bulgarisch](http://bg.phptherightway.com/)
@@ -41,4 +40,4 @@ Unterstützung und zeige neuen PHP-Entwicklern, wo sie gute Informationen finden
 [Bannergrafiken][2]
 
 [1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
-[2]: /banners.html
+[2]: ./banners.html
