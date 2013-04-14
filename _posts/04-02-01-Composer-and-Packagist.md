@@ -45,7 +45,7 @@ Im folgenden Beispiel wird [Twig] als Abhängigkeit zu deinem Projekt hinzugefü
 composer require twig/twig:^2.0
 {% endhighlight %}
 
-Alternative führt dich der Befehl `composer init` durch die Erstellung einer vollständigen `composer.json`
+Alternativ führt dich der Befehl `composer init` durch die Erstellung einer vollständigen `composer.json`
 für dein Projekt. In jedem Fall kannst du nach der Erzeugung der Datei `composer.json` Composer anweisen,
 die Abhängigkeiten deines Projekts in das Verzeichnis `vendors/` herunterzuladen und zu installieren. Das
 trifft auch auf heruntergeladene Projekte zu, die selbst bereits eine Datei `composer.json` bereitstellen:

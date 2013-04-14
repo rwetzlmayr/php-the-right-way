@@ -23,7 +23,7 @@ Rekursion, eine Eigenschaft, die den Aufruf einer Funktion durch sich selbst erl
 
 Neue anonyme Funktionen mit der Unterstützung von Closures sind seit PHP 5.3 (2009) vorhanden.
 
-Mit PHP 5.4 kam die Fähigkeit, Closures an den Gültigkeitsbereich eines Objekts zu binden, und die verbesserte Unterstützung für Callables, die seither gleichberechtigt mit anonymen Funktionen in fast allen Fällen einsetzbar sind.
+Mit PHP 5.4 kam die Fähigkeit, Closures an den Gültigkeitsbereich eines Objekts zu binden und die verbesserte Unterstützung für Callables, die seither gleichberechtigt mit anonymen Funktionen in fast allen Fällen einsetzbar sind.
 
 * Erfahre mehr über [funktionales Programmieren in PHP](./pages/Functional-Programming.html)
 * [Mehr zu anonymen Funktionen][anonymous-functions]
