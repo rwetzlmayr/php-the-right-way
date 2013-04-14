@@ -19,7 +19,7 @@ Damit wird `composer.phar` (ein binäres PHP-Archiv) heruntergeladen. Du kannst 
 
 ### Composer manuell installieren
 
-Die manuelle Installation von Composer ist eine Technik für Fortgeschrittene. Es gibt verschiedene Gründe, warum ein Entwickler diese Methode gegenüber der interaktive Installationsroutine bevorzugen würde. Die interaktive Installation überprüft deine PHP-Umgebung auf:
+Die manuelle Installation von Composer ist eine Technik für Fortgeschrittene. Es gibt verschiedene Gründe, warum ein Entwickler diese Methode gegenüber der interaktiven Installationsroutine bevorzugen würde. Die interaktive Installation überprüft deine PHP-Umgebung auf:
 
 - eine ausreichende Version von PHP
 - die korrekte Ausführung von `.phar`-Dateien
@@ -44,7 +44,7 @@ Composer verfolgt die Abhängigkeiten deines Projekts in einer Datei namens `com
 
     php composer.phar require twig/twig:~1.8
 
-Alternative führt dich der Befehl `php composer.phar init` durch die Erstellung einer vollständigen `composer.json` für dein Projekt. In jedem Fall kannst du nach der Erzeugung der Datei `composer.json` Composer anweisen, die Abhängigkeiten deines Projekts in das Verzeichnis `vendors/` herunterzuladen und zu installieren. Das trifft auch auf heruntergeladene Projekte zu, die selbst bereits eine Datei `composer.json` bereitstellen:
+Alternativ führt dich der Befehl `php composer.phar init` durch die Erstellung einer vollständigen `composer.json` für dein Projekt. In jedem Fall kannst du nach der Erzeugung der Datei `composer.json` Composer anweisen, die Abhängigkeiten deines Projekts in das Verzeichnis `vendors/` herunterzuladen und zu installieren. Das trifft auch auf heruntergeladene Projekte zu, die selbst bereits eine Datei `composer.json` bereitstellen:
 
     php composer.phar install
 
@@ -59,7 +59,7 @@ Du kannst jetzt Projektabhängigkeiten verwenden, und sie werden automatisch her
 
 ### Abhängigkeiten aktualisieren
 
-Composer erzeugt eine Datei `composer.lock`, in der die genauen Versionen jedes Pakets zu dem Zeitpunkt gespeichert sind, an dem du das erste Mal `php composer.phar install` ausgeführt hast. Wenn du dein Projekt mit anderen Programmierern teilst und die Datei `php composer.phar install` in das verteilte Produkt aufnimmst, erhalten sie die selbe Version wie du. Starte  `php composer.phar update`, um die Abhängigkeiten zu aktualisieren.
+Composer erzeugt eine Datei `composer.lock`, in der die genauen Versionen jedes Pakets zu dem Zeitpunkt gespeichert sind, an dem du das erste Mal `php composer.phar install` ausgeführt hast. Wenn du dein Projekt mit anderen Programmierern teilst und die Datei `php composer.phar install` in das verteilte Produkt aufnimmst, erhalten sie dieselbe Version wie du. Starte  `php composer.phar update`, um die Abhängigkeiten zu aktualisieren.
 
 Das ist auch sehr nützlich, falls du deine Versionsansprüche flexibel definiert hast. Beispielsweise bedeutet eine erforderliche Version von ~1.8 "irgend eine Version, die neuer ist als 1.8, aber niedriger als 2.0.x-dev". Der Composer-Befehl `php composer.phar update` wird alle Abhängigkeiten auf die neueste Version aktualisieren, welche die definierten Einschränkungen erfüllen.
 
