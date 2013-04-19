@@ -12,10 +12,10 @@ Du brauchst nicht für jedes Projekt ein Framework. Manchmal ist gewöhnliches P
 * Vollständige Frameworks
 * Komponenten-Frameworks
 
-Micro-Frameworks sind im wesentlichen eine Hülle, um einen HTTP-Request möglichst schnell an ein Callback, einen Controller oder eine Methode weiterzuleiten, und werden manchmal von Bibliotheken wie etwa Datenbankhüllen und Ähnlichem begleitet. Sie werden typischerweise eingesetzt, um Remote-HTTP-Dienste zu bauen.
+Micro-Frameworks sind im wesentlichen eine Hülle, um einen HTTP-Request möglichst schnell an einen Callback, einen Controller oder eine Methode weiterzuleiten, und werden manchmal von Bibliotheken wie etwa Datenbankhüllen und Ähnlichem begleitet. Sie werden typischerweise eingesetzt, um Remote-HTTP-Dienste zu bauen.
 
 Viele Frameworks fügen eine beträchtliche Anzahl von Fähigkeiten zu dem hinzu, was ein Micro-Framework bietet. Diese nennt man "Vollständige Frameworks". Sie enthalten oft ORMs, Pakte zur Authentifizierung etc.
 
-Komponentenbasierende Frameworks sind Sammlungen von spezialisierten Biblithken für eine genauen Zweck. Verschiedene komponentenbasierende Frameworks können miteinander eingesetzt werden, um ein Micro- oder vollständiges Framework zu bilden.
+Komponentenbasierende Frameworks sind Sammlungen von spezialisierten Bibliotheken für einen genau definierten Zweck. Verschiedene komponentenbasierende Frameworks können miteinander eingesetzt werden, um ein Micro- oder vollständiges Framework zu bilden.
 
 * [Populäre PHP-Frameworks](https://github.com/codeguy/php-the-right-way/wiki/Frameworks)

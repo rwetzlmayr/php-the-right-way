@@ -1,6 +1,6 @@
 # Community {#community_title}
 
-Die PHP-Community ist so vielfältig wie zahlreich, und ihre Mitglieder unterstützen Anfänger gerne. Vieleicht möchtest du einer örtlichen PHP-Anwendergruppe (PHP  User Group, PUG) beitreten oder größere PHP-Konferenzen besuchen, um mehr über die besten Methoden zu lernen, die hier gezeigt werden. Du kannst dich mit Gleichgesinnten im Channel #phpc auf [irc.freenode.com][php-irc] über IRC treffen oder [@phpc][phpc-twitter] auf Twitter folgen. Gehe raus, triff neue Entwickler, lernen neue Themen, und schließe neue Freundschaften. Weitere Community-Ressourcen sind die [Community der PHP-Entwickler auf Google+][php-programmers-gplus] und [StackOverflow][php-so].
+Die PHP-Community ist so vielfältig wie zahlreich, und ihre Mitglieder unterstützen Anfänger gerne. Vieleicht möchtest du einer örtlichen PHP-Anwendergruppe (PHP  User Group, PUG) beitreten oder größere PHP-Konferenzen besuchen, um mehr über die besten Methoden zu lernen, die hier gezeigt werden. Du kannst dich mit Gleichgesinnten im Channel #phpc auf [irc.freenode.com][php-irc] über IRC treffen oder [@phpc][phpc-twitter] auf Twitter folgen. Gehe raus, triff neue Entwickler, lernen neue Themen und schließe neue Freundschaften. Weitere Community-Ressourcen sind die [Community der PHP-Entwickler auf Google+][php-programmers-gplus] und [StackOverflow][php-so].
 
 [Lies den offiziellen PHP-Events-Kalendar][php-calendar]
 

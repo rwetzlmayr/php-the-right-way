@@ -4,7 +4,7 @@ title: Verwaltung von Abhängigkeiten
 
 # Verwaltung von Abhängigkeiten {#dependency_management_title}
 
-Es gibt eine unüberschaubare Menge von PHP-Bibliotheken, Frameworks und Bausteine, aus denen man wählen kann. In deinem Projekt wirst du wahrscheinlich mehrere davon einsetzen. Bis vor Kurzem hatte PHP keine Methode. um dies Projektabhängigkeiten zu verwalten. Selbst wenn du diese händisch verwaltet hättest, musstest du dich über Autoloader sorgen. Das ist vorbei.
+Es gibt eine unüberschaubare Menge von PHP-Bibliotheken, Frameworks und Bausteinen, aus denen man wählen kann. In deinem Projekt wirst du wahrscheinlich mehrere davon einsetzen. Bis vor Kurzem hatte PHP keine Methode. um diese Projektabhängigkeiten zu verwalten. Selbst wenn du diese händisch verwaltet hättest, musstest du dich um Autoloading kümmern. Das ist vorbei.
 
 Zur Zeit gibt es zwei große Paketverwaltungssysteme für PHP - Composer und PEAR. Welches ist das richtige für dich? Beide, lautete die Antwort.
 

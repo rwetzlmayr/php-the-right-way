@@ -8,7 +8,7 @@ title: Bytecode-Cache
 Wenn eine PHP-Datei ausgeführt wird, wird sie im Hintergrund zuerst in Bytecode (auch Opcode genannt) kompiliert und dieser Bytecode anschließend ausgeführt.
 Solange die PHP-Datei nicht verändert wurde, bleibt dieser Bytecode gleich. Das heißt, dass der Kompilierungsschritt eine Verschwendung von CPU-Ressourcen ist.
 
-Hier kommt der Bytecode-Cache ins Spiel. Er verhindert redundanten Kompilierung durch das Speichern von Bytecode im Hauptspeicher und Wiederverwendung bei nachfolgenden Aufrufen. Der Bytecode-Cache ist innerhalb weniger Minuten einzurichten und wird deine Anwendung signifikant beschleunigen. Es gibt wirklich keinen Grund, ihn nicht einzusetzen.
+Hier kommt der Bytecode-Cache ins Spiel. Er verhindert die redundante Kompilierung durch das Speichern von Bytecode im Hauptspeicher und ermgöglicht die Wiederverwendung bei nachfolgenden Aufrufen. Der Bytecode-Cache ist innerhalb weniger Minuten einzurichten und wird deine Anwendung signifikant beschleunigen. Es gibt wirklich keinen Grund, ihn nicht einzusetzen.
 
 Beliebte Bytecode-Caches sind:
 
