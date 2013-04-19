@@ -5,7 +5,7 @@ title: Objektcache
 
 ## Objektcache {#object_caching_title}
 
-Manchmal ist es vorteilhaft, einzelne Objekte in deinem Code zu cachen wie etwa Daten, die nur mit hohem Aufwand zu erhalten sind, oder Datenbankzugriffe, deren Ergebnis sich wahrscheinlich nicht ändert. Du kannst Objektcache-Software verwenden, um diese Teile von Daten im Speicher zu halten und extrem schnell später darauf zuzugreifen. Wenn du diese Elemente in einem Datenspeicher sicherst, nachdem du sie abgerufen hast, und anschließend für nachfolgende Anfragen direkt aus dem Cache holst, kannst du wesentliche Verbesserungen bezüglich Geschwindigkeit erreichen und die Last der Datenbankserver vermindern.
+Manchmal ist es vorteilhaft, einzelne Objekte in deinem Code zu cachen wie etwa Daten, die nur mit hohem Aufwand zu erhalten sind, oder Datenbankzugriffe, deren Ergebnis sich wahrscheinlich nicht ändert. Du kannst Objektcache-Software verwenden, um diese Teile von Daten im Speicher zu halten und extrem schnell später darauf zuzugreifen. Wenn du diese Elemente in einem Datenspeicher sicherst, nachdem du sie abgerufen hast, und anschließend für nachfolgende Anfragen direkt aus dem Cache holst, kannst du wesentliche Geschwindigkeitsverbesserungen erreichen und die Last der Datenbankserver vermindern.
 
 Viele beliebte Lösungen für Bytecode-Caches erlauben dir auch, eigene Daten zu cachen, was noch ein zusätzlicher Grund ist, diese zu deinem Vorteil zu nutzen. APC, XCache und WinCache bieten APIs, um Daten aus deinem PHP-Code in ihren Cachespeicher zu sichern.
 

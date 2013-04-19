@@ -4,11 +4,11 @@ title: Datenbanken
 
 # Datenbanken {#databases_title}
 
-Oft wird dein PHP-Code eine Datenbank verwenden, um Information dauerhaft zu speichern. Es gibt wirst einige Möglichkeiten, um dich mit deiner Datenbank zu verbinden und mit ihr zu interagieren. Die empfohlene Auswahl _bis PHP 5.1.0__ waren die nativen Treiber wie [mysql][mysql], [mysqli][mysqli], [pgsql][pgsql] etc.
+Oft wird dein PHP-Code eine Datenbank verwenden, um Informationen dauerhaft zu speichern. Es gibt einige Möglichkeiten, um dich mit deiner Datenbank zu verbinden und mit ihr zu interagieren. Die empfohlene Auswahl _bis PHP 5.1.0__ waren die nativen Treiber wie [mysql][mysql], [mysqli][mysqli], [pgsql][pgsql] etc.
 
-Native Treiber sind gut geeignet, wenn du nur ein Datenbanksystem in deiner Anwendung einsetzt. Wenn du aber zum Beispiel MySQL und ein wenig von MSSQL verwenden oder dich mit einer Oracle-Datenbank verbinden möchtest, kannst du nicht die selben Treiber verwenden. Du musst ein völlig neues API für jedes Datenbanksystem erlernen - und das kann albern werden.
+Native Treiber sind gut geeignet, wenn du nur ein Datenbanksystem in deiner Anwendung einsetzt. Wenn du aber zum Beispiel MySQL und ein wenig von MSSQL verwenden oder dich mit einer Oracle-Datenbank verbinden möchtest, kannst du nicht dieselben Treiber verwenden. Du musst ein völlig neues API für jedes Datenbanksystem erlernen - und das kann albern werden.
 
-Zusätzlich ist zu sagen, dass die MySQL-Erweiterung für PHP nicht mehr aktiv weiterentwickelt wird und der offizielle Status seit PHP 5.4.0 "Langfristige Abkündigung" lautet. Das bedeutet, dass sie im Zug der nächsten Releases entfernt werden wird. Sie könnte also mit PHP 5.6 (oder welche Version auch immer nach 5.5 kommen wird) verschwinden. Setzt du `mysql_connect()` und `mysql_query()` in deiner Anwendung ein, gehst du einer unvermeidlichen Neufassung entgegen. Die beste Wahl ist ist es, in deinen Anwendungen während eines geplanten Entwicklungszyklus mysql durch mysqli oder PDO zu ersetzen und so einer späteren erzwungenen Umstellung auszuweichen. _Vermeide die mysql-Erweiterung bei einem neuen Projekt: Verwende die [mysqli-Erweiterung][mysqli] oder PDO._
+Zusätzlich ist zu sagen, dass die MySQL-Erweiterung für PHP nicht mehr aktiv weiterentwickelt wird und der offizielle Status seit PHP 5.4.0 "langfristige Abkündigung" lautet. Das bedeutet, dass sie im Zug der nächsten Releases entfernt werden wird. Sie könnte also mit PHP 5.6 (oder welche Version auch immer nach 5.5 kommen wird) verschwinden. Setzt du `mysql_connect()` und `mysql_query()` in deiner Anwendung ein, wirst du den Code dann umschreiben müssen. Die beste Wahl ist ist es, in deinen Anwendungen während eines geplanten Entwicklungszyklus mysql durch mysqli oder PDO zu ersetzen und so einer späteren erzwungenen Umstellung auszuweichen. _Vermeide die mysql-Erweiterung bei einem neuen Projekt: Verwende die [mysqli-Erweiterung][mysqli] oder PDO._
 
 * [PHP: Choosing an API for MySQL](http://php.net/manual/de/mysqlinfo.api.choosing.php)
 
@@ -26,7 +26,7 @@ $pdo = new PDO('sqlite:users.db');
 $pdo->query("SELECT name FROM users WHERE id = " . $_GET['id']); // <-- NO!
 {% endhighlight %}
 
-Das ist schrecklicher Code. Du fügst einen ungefilterten Query-Parameter in eine SQL-Abfrage ein. Du wirst innhalb eines Herzschlags gehackt. Stell dir vor, dass ein  Hacker einen erfinderischer `id`-Parameter über eine URL wie `http://domain.com/?id=1%3BDELETE+FROM+users` übergibt. Das setzt die Variable `$_GET['id']` auf `1;DELETE FROM users` und löscht so alle deine User! Du solltest stattdessen die ID-Eingabe über PDO-gebundene Parameter reinigen.
+Das ist schrecklicher Code. Du fügst einen ungefilterten Query-Parameter in eine SQL-Abfrage ein. Du wirst innerhalb von Sekunden gehackt. Stell dir vor, dass ein  Hacker einen erfinderischen `id`-Parameter über eine URL wie `http://domain.com/?id=1%3BDELETE+FROM+users` übergibt. Das setzt die Variable `$_GET['id']` auf `1;DELETE FROM users` und löscht so alle deine User! Du solltest stattdessen die ID-Eingabe über PDO-gebundene Parameter reinigen.
 
 {% highlight php %}
 <?php
