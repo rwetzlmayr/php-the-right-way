@@ -17,7 +17,7 @@ Unit-Tests sind ein Entwicklungsansatz, der sicherstellt, dass Funktionen, Klass
 
 Beim Bau einer Klasse oder Funktion solltest du einen Unit-Test für jedes Verhalten schaffen. Zumindest solltest du sicherstellen, dass bei ungültigen Eingabewerten Fehler passieren und die Funktion bei gültigen Argumenten funktioniert. Damit ist sichergestellt, dass alte Funktionalität erhalten bleibt, wenn du diese Klasse später änderst. Die einzige Alternative wäre var_dump() in einer test.php, und so baut man keine Anwendung - ob klein oder groß.
 
-Die andere Anwendung für Unit-Tests ist als Beitrag zu Open Source. Wenn du einen Unit-Test schreiben kannst, der zeigt, dass eine Funktionalität fehlerhaft ist und das dann mit durchlaufendem Testergebnis korrigierst, werden Patches wahrscheinlicher akzeptiert. Wenn du ein Projekt betreibst, das Pull Requests akzeptiert, solltest du das als Erfordernis empfehlen.
+Die andere Anwendung für Unit-Tests ist a Beitrag in einem Open Source Projekt. Wenn du einen Unit-Test schreiben kannst, der zeigt, dass eine Funktionalität fehlerhaft ist und das dann mit durchlaufendem Testergebnis korrigierst, werden Patches wahrscheinlicher akzeptiert. Wenn du ein Projekt betreibst, das Pull Requests akzeptiert, solltest du das als Erfordernis empfehlen.
 
 [PHPUnit](http://phpunit.de) ist das De-Facto Testframework zum Erstellen von Unit-Tests für PHP, aber es gibt einige Alternativen:
 
@@ -32,7 +32,7 @@ Aus [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
 > Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
-Viele der gleichen Werkzeuge für Unit-Tests können auch für Integrationstests verwendet werden da dieselben Prinzipien verwendet werden.
+Viele der gleichen Werkzeuge für Unit-Tests können auch für Integrationstests verwendet werden, da dieselben Prinzipien verwendet werden.
 
 ### Funktionaler Test
 
