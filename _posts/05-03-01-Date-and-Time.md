@@ -17,7 +17,7 @@ $start = \DateTime::createFromFormat('d. m. Y', $raw);
 echo 'Start date: ' . $start->format('m/d/Y') . "\n";
 {% endhighlight %}
 
-Die Klasse DateInterval ermöglicht Berechnungen mit DateTime. DateTime besitzt Methoden wie `add()` and `sub()`, die ein DateTime-Intervall als Argument akzeptieren. Schreibe keinen Code, der annimmt, dass jeder Tag die selbe Zahl von Sekunden dauert. Sowohl Sommerzeit-/Winterzeitwechsel als auch Zeitzonenwechsel verletzen diese Annahme. Verende stattdessen DateInterval. Verwenden die Methode `diff()`, um Datumsunterschiede zu berechnen. Das Ergebnis ist ein DateInterval, das sehr einfach anzuzeigen ist.
+Die Klasse DateInterval ermöglicht Berechnungen mit DateTime. DateTime besitzt Methoden wie `add()` and `sub()`, die ein DateTime-Intervall als Argument akzeptieren. Schreibe keinen Code, der annimmt, dass jeder Tag dieselbe Zahl von Sekunden dauert. Sowohl Sommerzeit-/Winterzeitwechsel als auch Zeitzonenwechsel verletzen diese Annahme. Verende stattdessen DateInterval. Verwenden die Methode `diff()`, um Datumsunterschiede zu berechnen. Das Ergebnis ist ein DateInterval, das sehr einfach anzuzeigen ist.
 
 {% highlight php %}
 <?php
@@ -39,7 +39,7 @@ if ($start < $end) {
 }
 {% endhighlight %}
 
-Ein letztes Beispiel zeigt die Klasse DatePeriod. Sie wird verwendet, um über wiederkehrende Ereignisse zu iterieren. Sie akzeptiert zwei DateTome-Objekt für Beginn und Ende und ein Intervall und gibt alle Ereignisse dazwischen zurück.
+Ein letztes Beispiel zeigt die Klasse DatePeriod. Sie wird verwendet, um über wiederkehrende Ereignisse zu iterieren. Sie akzeptiert zwei DateTome-Objekte für Beginn und Ende und ein Intervall und gibt alle Ereignisse dazwischen zurück.
 {% highlight php %}
 <?php
 // output all thursdays between $start and $end

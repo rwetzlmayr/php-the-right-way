@@ -7,7 +7,7 @@ title: Exceptions
 
 Exceptions sind ein Standardbestandteil moderner populärer Programmiersprachen, werden aber oft von PHP-Programmierern übersehen. Sprachen wie Ruby legen viel Gewicht auf Exceptions, so dass viele Fehler wie etwa ein erfolgloser HTTP-Request, eine falsche Datenbankabfrage oder eine fehlende Grafikdatei die Anzeige von Exceptions am Bildschirm auslösen und so auf Fehler hinweisen.
 
-PHP selbst ist relative nachlässig, so dass ein `file_get_contents()` üblicherweise nur zu einem `FALSE` und einer Warnung führt. Viele ältere Frameworks wie CodeIgniter geben auch nur `FALSE` zurück, scheiben eine Nachricht in ihr Fehlerlog und erlauben dir den Aufruf einer Methode wie `$this->upload->get_error()`, um die Ursache des Fehlers zu finden. Das Problem dabei ist, dass du nach dem Fehler fragen und in der Dokumentation nach der Fehlermethode für diese Klasse suchen musst, statt es äußerst offensichtlich zu machen.
+PHP selbst ist relativ nachlässig, so dass ein `file_get_contents()` üblicherweise nur zu einem `FALSE` und einer Warnung führt. Viele ältere Frameworks wie CodeIgniter geben auch nur `FALSE` zurück, scheiben eine Nachricht in ihr Fehlerlog und erlauben dir den Aufruf einer Methode wie `$this->upload->get_error()`, um die Ursache des Fehlers zu finden. Das Problem dabei ist, dass du nach dem Fehler fragen und in der Dokumentation nach der Fehlermethode für diese Klasse suchen musst, statt es äußerst offensichtlich zu machen.
 
 Ein weiteres Problem besteht, wenn Klassen automatisch Fehler auslösen und den Prozess beenden. Wenn du so vorgehst, hinderst du andere Entwickler daran, Fehler dynamisch zu behandeln. Exceptions sollten ausgelöst werden, um Entwickler auf Fehler hinzuweisen und ihnen Gelegenheit zu geben, darauf zu reagieren. Ein Beispiel:
 
@@ -41,7 +41,7 @@ Die generische Klasse `Exception` enthält sehr wenig Kontext für das Debugging
 class ValidationException extends Exception {}
 {% endhighlight %}
 
-So kannst du mehrere `catch`-Blöcke einrichten und unterschiedliche Exception auch unterschiedlich behandeln. Das kan zu einer <em>Vielzahl</em> von benutzerdefinierten Exceptions führen, von denen einige durch den Einsatz von SPl Exceptions aus der  [SPL-Erweiterung][splext] vermeidbar sind.
+So kannst du mehrere `catch`-Blöcke einrichten und unterschiedliche Exceptions auch unterschiedlich behandeln. Das kan zu einer <em>Vielzahl</em> von benutzerdefinierten Exceptions führen, von denen einige durch den Einsatz von SPl Exceptions aus der  [SPL-Erweiterung][splext] vermeidbar sind.
 
 Zum Beispiel könnte die magische Methode `__call()` beim Aufruf einer ungültigen Methode `throw new BadFunctionCallException;` aufrufen, statt die Standard-Exception oder eine benutzerdefinierte Exception auszulösen.
 
