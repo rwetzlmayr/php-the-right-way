@@ -4,7 +4,7 @@ isChild: true
 anchor:  use_the_current_stable_version
 ---
 
-## Verwende die aktuelle stabile Version (7.3) {#use_the_current_stable_version_54_title}
+## Verwende die aktuelle stabile Version (7.3) {#use_the_current_stable_version_title}
 
 Wenn du gerade diene ersten Schritte mit PHP machst, stelle sicher, dass du mit der aktuellen stabilen Version von [PHP 7.3][php-release] beginnst.
 PHP 7.x adds many [new features](#language_highlights) over the older 5.x versions. The engine has been largely re-written, and PHP is now even quicker than older versions.
