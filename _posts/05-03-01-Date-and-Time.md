@@ -39,7 +39,7 @@ if ($start < $end) {
 }
 {% endhighlight %}
 
-Ein letztes Beispiel zeigt die Klasse DatePeriod. Sie wird verwendet, um über wiederkehrende Ereignisse zu iterieren. Sie akzeptiert zwei DateTome-Objekte für Beginn und Ende und ein Intervall und gibt alle Ereignisse dazwischen zurück.
+Ein letztes Beispiel zeigt die Klasse DatePeriod. Sie wird verwendet, um über wiederkehrende Ereignisse zu iterieren. Sie akzeptiert zwei DateTime-Objekte für Beginn und Ende und ein Intervall und gibt alle Ereignisse dazwischen zurück.
 {% highlight php %}
 <?php
 // output all thursdays between $start and $end
