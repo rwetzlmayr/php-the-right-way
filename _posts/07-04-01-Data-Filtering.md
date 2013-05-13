@@ -7,7 +7,7 @@ title: Daten filtern
 
 Vertraue niemals (niemals!) Eingaben in deinen PHP-Code von außen. Bereinige und validiere externe Eingaben, bevor du sie in deinem Code verwendest. Die Funktionen `filter_var` und `filter_input` können Text bereinigen und Textformate wie zum Beispiel E-Mail-Adressen validieren.
 
-Eine Eingabe von außen kann alles mögliche  sein: Formulareingaben über `$_GET` und `$_POST, einige Werte im Superglobal `$_SERVER`
+Eine Eingabe von außen kann alles mögliche  sein: Formulareingaben über `$_GET` und `$_POST`, einige Werte im Superglobal `$_SERVER`
 und der Inhalt des HTTP-Requests über `fopen('php://input', 'r')`. Danke daran: Fremdeingaben sind nicht beschränkt auf Formulardaten, die ein Benutzer absendet. Hochgeladene und heruntergeladene Dateien, Sessionwerte, Daten aus Cookies und Daten von dritter Seite wie Webservices sind auch Fremdeingaben.
 
 Während Fremdeingaben gespeichert, kombiniert und später verwendet werden können, bleiben sie noch immer Fremdeingaben. Frage dich jedes  Mal, ob die Daten korrekt gefiltert sind, wenn du sie in deinem Code verarbeitest, ausgibst, verbindest oder einbaust.
