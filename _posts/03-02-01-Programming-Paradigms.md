@@ -33,7 +33,7 @@ Mit PHP 5.4 kam die Fähigkeit, Closures an den Gültigkeitsbereich eines Objekt
 
 ### Meta-Programmierung
 
-PHP unterstützt verschiedene Formen der Meta-Programmiereung über Mechanismen wie das Reflection API und magische Methoden. Die magischen Methoden wie etwa `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` etc. erlauben Entwicklern, sich in das Verhalten von Klassen einzuhängen. Ruby-Entwickler behaupten oft, dass in PHP `method_missing` fehlt, aber diese ist als `__call()` and `__callStatic()` vorhanden.
+PHP unterstützt verschiedene Formen der Meta-Programmierung über Mechanismen wie das Reflection API und magische Methoden. Die magischen Methoden wie etwa `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` etc. erlauben Entwicklern, sich in das Verhalten von Klassen einzuhängen. Ruby-Entwickler behaupten oft, dass in PHP `method_missing` fehlt, aber diese ist als `__call()` and `__callStatic()` vorhanden.
 
 * [Mehr über magische Methoden][magic-methods]
 * [Mehr über Reflection][reflection]
