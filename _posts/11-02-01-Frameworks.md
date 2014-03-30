@@ -4,7 +4,7 @@ isChild: true
 
 ## Frameworks {#frameworks_title}
 
-Viele PHP-Entwickler verwenden Frameworks beim Bau von Webanwendungen, statt das Rad neu zu erfinden. Frameworks abstrahieren viele der grundlegenden Anliegen und bieten hilfreiche, einfach verwendbare Schnittstellen, um übliche Aufgeben zu erfüllen.
+Viele PHP-Entwickler verwenden Frameworks beim Bau von Webanwendungen, statt das Rad neu zu erfinden. Frameworks abstrahieren viele der grundlegenden Anliegen und bieten hilfreiche, einfach verwendbare Schnittstellen, um übliche Aufgaben zu erfüllen.
 
 Du brauchst nicht für jedes Projekt ein Framework. Manchmal ist gewöhnliches PHP die richtige Art der Lösung, aber wenn du ein Framework benötigst, dann findest du drei typische Arten:
 
