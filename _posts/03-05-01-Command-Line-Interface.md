@@ -23,7 +23,7 @@ Schreiben wir doch ein CLI-Programm für "Hello, $name". Erstelle eine Datei `he
 
 {% highlight php %}
 <?php
-if ($argc != 2) {
+if ($argc !== 2) {
     echo "Usage: php hello.php [name].\n";
     exit(1);
 }
