@@ -20,7 +20,7 @@ Du kannst deinen Code mit [PHP_CodeSniffer][phpcs] gegenüber einer dieser Empfe
 
 Mit Fabien Potenciers [PHP Coding Standards Fixer][phpcsfixer] kannst du automatisch Code modifizieren, sodass er mit diesen Standards konform ist, und sparst dir somit die händische Bearbeitung.
 
-Englisch ist die bevorzugte Sprache für alle Symbolnamen und Code-Infrastruktur. Kommentare können in jeder Sprache geschrieben wrden, die von den derzeitigen und künftigen Beteiligten gelesen werden kann.
+Englisch ist die bevorzugte Sprache für alle Symbolnamen und Code-Infrastruktur. Kommentare können in jeder Sprache geschrieben werden, die von den derzeitigen und künftigen Beteiligten gelesen werden kann.
 
 [fig]: http://www.php-fig.org/
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
