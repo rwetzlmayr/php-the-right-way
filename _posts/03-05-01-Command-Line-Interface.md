@@ -31,7 +31,7 @@ $name = $argv[1];
 echo "Hello, $name\n";
 {% endhighlight %}
 
-PHP erstellt zwei spezielle Variable auf Basis der Argument, mit denen dein Script gestartet wird. [`$argc`][argc] ist eine Integer-Variable und enthält die *Anzahl* der Argumente; [`$argv`][argv] ist ein eine Array-Variable, die den *Wert* jedes Arguments enthält. Das erste Argument ist immer der Name deines PHP-Scripts, in unserem Fall also `hello.php`.
+PHP erstellt zwei spezielle Variablen auf Basis der Argumente, mit denen dein Script gestartet wird. [`$argc`][argc] ist eine Integer-Variable und enthält die *Anzahl* der Argumente; [`$argv`][argv] ist ein eine Array-Variable, die den *Wert* jedes Arguments enthält. Das erste Argument ist immer der Name deines PHP-Scripts, in unserem Fall also `hello.php`.
 
 Der Ausdruck `exit()` wird mit einer Zahl ungleich Null aufgerufen, um die Shell davon zu informieren, dass der Befehl gescheitert ist. Gebräuchliche Exitcodes findet man [hier][exit-codes].
 
