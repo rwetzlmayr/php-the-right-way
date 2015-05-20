@@ -32,7 +32,7 @@ Da eine manuelle Installation keine dieser Bedingungen prüft, muss du entscheid
     curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
     chmod +x $HOME/local/bin/composer
 
-Der Pfad `$HOME/local/bin` oder anderes ein Verzeichnis deiner Wahl sollten in deiner Umgebungsvariablen `$PATH` enthalten sein. Damit wird der Befehl `composer` verfügbar.
+Der Pfad `$HOME/local/bin` oder ein anderes Verzeichnis deiner Wahl sollten in deiner Umgebungsvariablen `$PATH` enthalten sein. Damit wird der Befehl `composer` verfügbar.
 
 Jedes Vorkommen von `php composer.phar install` in der Dokumentation kannst du mit folgendem Befehl ersetzen:
 
@@ -48,7 +48,7 @@ Alternativ führt dich der Befehl `php composer.phar init` durch die Erstellung 
 
     php composer.phar install
 
-Als nächsten Schritt füge diese Zeile zur primären PHP-Datei deines Projektes hinzu; damit weist du PHP an, den Autloader von Composer für deine Projektabhängigkeiten einzusetzen.
+Als nächsten Schritt füge die folgende Zeile zur primären PHP-Datei deines Projektes hinzu; damit weist du PHP an, den Autloader von Composer für deine Projektabhängigkeiten einzusetzen.
 
 {% highlight php %}
 <?php
