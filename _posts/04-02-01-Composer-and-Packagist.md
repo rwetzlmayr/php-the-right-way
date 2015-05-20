@@ -54,7 +54,7 @@ trifft auch auf heruntergeladene Projekte zu, die selbst bereits eine Datei `com
 composer install
 {% endhighlight %}
 
-Als nächsten Schritt füge diese Zeile zur primären PHP-Datei deines Projektes hinzu; damit weist du PHP an, den Autloader von Composer für deine Projektabhängigkeiten einzusetzen.
+Als nächsten Schritt füge die folgende Zeile zur primären PHP-Datei deines Projektes hinzu; damit weist du PHP an, den Autloader von Composer für deine Projektabhängigkeiten einzusetzen.
 
 {% highlight php %}
 <?php
