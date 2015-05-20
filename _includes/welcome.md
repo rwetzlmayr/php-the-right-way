@@ -10,16 +10,26 @@ maßgeblichen Anleitungen im Web.
 _PHP: Der richtige Weg_ wurde in viele verschiedene Spachen übersetzt:
 
 * [Englisch](http://www.phptherightway.com)
-* [Katalanisch](http://ca.phptherightway.com)
-* [Chinesisch](http://wulijun.github.com/php-the-right-way)
-* [Japanisch](http://ja.phptherightway.com)
+* [Bulgarisch](http://bg.phptherightway.com/)
+* [Chinesisch (vereinfacht)](http://laravel-china.github.io/php-the-right-way/)
+* [Chinesisch (traditionell)](http://laravel-taiwan.github.io/php-the-right-way)
+* [Französisch](http://eilgin.github.io/php-the-right-way/)
+* [Deutsch](http://rwetzlmayr.github.io/php-the-right-way/)
+* [Indonesisch](http://id.phptherightway.com/)
 * [Italienisch](http://it.phptherightway.com)
+* [Japanisch](http://ja.phptherightway.com)
+* [Koreanisch](http://modernpug.github.io/php-the-right-way/)
+* [Persisch](http://novid.github.io/php-the-right-way/)
 * [Polnisch](http://pl.phptherightway.com/)
 * [Portugiesisch](http://br.phptherightway.com/)
+* [Rumänisch](https://bgui.github.io/php-the-right-way/)
+* [Russisch](http://getjump.github.io/ru-php-the-right-way)
+* [Serbisch](http://smatejic.github.io/php-the-right-way/)
+* [Slowenisch](http://sl.phptherightway.com/)
 * [Spanisch](http://es.phptherightway.com)
+* [Thailändisch](https://apzentral.github.io/php-the-right-way/)
+* [Türkisch](http://hkulekci.github.io/php-the-right-way/)
 * [Ukraininisch](http://iflista.github.com/php-the-right-way/)
-* [Bulgarisch](http://bg.phptherightway.com/)
-* [Deutsch](http://rwetzlmayr.github.io/php-the-right-way/)
 
 ## Haftungsausschluss
 
