@@ -7,7 +7,7 @@ title: Datum und Zeit
 
 PHP beinhaltet eine Klasse namens DateTime, die beim Lesen, Schreiben, Vergleichen und Berechnen von Datum und Zeit hilft. Es gibt neben DateTime viele weitere Funktionen mit Bezug zu Datum und Zeit in PHP, aber die Klasse bietet eine schöne objektorientierte Schnittstelle für die häufigsten Anwendungsfälle. Sie kann auch Zeitzonen verarbeiten, das ist allerdings nicht Inhalt dieser kurzen Einführung.
 
-Konvertiere einen unformatierten Datums- und Zeitstring mit der Factory-Methode `createFromFormat()` oder verwende `new \DateTime` für die aktuelle Zeit und das aktuelle Datum, um mit DateTime zu beginnen. Verwende die Methode `format()`, um ein DateTime-Objeckt wieder in einen String zur Ausgabe zu konvertieren.
+Konvertiere einen unformatierten Datums- und Zeitstring mit der Factory-Methode `createFromFormat()` oder verwende `new \DateTime` für die aktuelle Zeit und das aktuelle Datum, um mit DateTime zu beginnen. Verwende die Methode `format()`, um ein DateTime-Objekt wieder in einen String zur Ausgabe zu konvertieren.
 
 {% highlight php %}
 <?php

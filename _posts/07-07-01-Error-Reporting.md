@@ -20,7 +20,7 @@ Um jeden möglichen Fehler während der Entwicklung anzuzeigen, konfiguriere fol
 
 Der Errorlevel `E_STRICT` wurde mit PHP 5.3.0 eingeführt und ist nicht Teil von `E_ALL`, wurde aber Teil von `E_ALL` in 5.4.0. Was bedeutet das? In Bezug auf Fehlermeldungen musst du in Verion 5.3 entweder `-1` oder `E_ALL | E_STRICT` verwenden.
 
-**Jeden Fehler melden ja nach PHP-Version**
+**Jeden Fehler melden je nach PHP-Version**
 
 * &lt; 5.3 `-1` oder `E_ALL`
 * &nbsp; 5.3 `-1` oder `E_ALL | E_STRICT`
