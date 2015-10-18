@@ -41,7 +41,7 @@ Die generische Klasse `Exception` enthält sehr wenig Kontext für das Debugging
 class ValidationException extends Exception {}
 {% endhighlight %}
 
-So kannst du mehrere `catch`-Blöcke einrichten und unterschiedliche Exceptions auch unterschiedlich behandeln. Das kan zu einer <em>Vielzahl</em> von benutzerdefinierten Exceptions führen, von denen einige durch den Einsatz von SPl Exceptions aus der  [SPL-Erweiterung][splext] vermeidbar sind.
+So kannst du mehrere `catch`-Blöcke einrichten und unterschiedliche Exceptions auch unterschiedlich behandeln. Das kann zu einer <em>Vielzahl</em> von benutzerdefinierten Exceptions führen, von denen einige durch den Einsatz von SPl Exceptions aus der  [SPL-Erweiterung][splext] vermeidbar sind.
 
 Zum Beispiel könnte die magische Methode `__call()` beim Aufruf einer ungültigen Methode `throw new BadFunctionCallException;` aufrufen, statt die Standard-Exception oder eine benutzerdefinierte Exception auszulösen.
 
