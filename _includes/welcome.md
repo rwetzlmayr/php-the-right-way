@@ -29,7 +29,7 @@ _PHP: Der richtige Weg_ wurde in viele verschiedene Spachen übersetzt:
 * [Spanisch](http://es.phptherightway.com)
 * [Thailändisch](https://apzentral.github.io/php-the-right-way/)
 * [Türkisch](http://hkulekci.github.io/php-the-right-way/)
-* [Ukraininisch](http://iflista.github.com/php-the-right-way/)
+* [Ukrainisch](http://iflista.github.com/php-the-right-way/)
 
 ## Haftungsausschluss
 
