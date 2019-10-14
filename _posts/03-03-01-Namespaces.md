@@ -1,6 +1,7 @@
 ---
 title: Namespaces
 isChild: true
+anchor:  namespaces
 ---
 
 ## Namespaces {#namespaces_title}
@@ -11,10 +12,17 @@ _Namespaces_ lösen dieses Problem. Laut der Beschreibung im PHP-Handbuch könne
 
 Für dich ist wichtig, deinen Code in Namensräumen zu ordnen, damit er von anderen Entwicklern ohne Sorge um mögliche Kollisionen mit anderen Bibliotheken verwendet werden kann.
 
-Ein empfohlene Methode zum Einsatz von Namespaces ist in [PSR-0][psr0] mit dem Ziel einer standardisierten Datei-, Klassen- und Namespace-Konvention für Plug-and-Play-Code umrissen.
+Ein empfohlene Methode zum Einsatz von Namespaces ist in [PSR-4][psr4] mit dem Ziel einer standardisierten Datei-, Klassen- und Namespace-Konvention für Plug-and-Play-Code umrissen.
 
-* [Mehr über Namespaces][namespaces]
-* [Mehr über PSR-0][psr0]
+In October 2014 the PHP-FIG deprecated the previous autoloading standard: [PSR-0][psr0]. Both PSR-0 and PSR-4 are still perfectly usable.  The latter requires PHP 5.3, so many PHP 5.2-only projects implement PSR-0.
 
-[namespaces]: http://php.net/manual/de/language.namespaces.php
-[psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+If you're going to use an autoloader standard for a new application or package, look into PSR-4.
+
+* [Read about Namespaces][namespaces]
+* [Read about PSR-0][psr0]
+* [Read about PSR-4][psr4]
+
+
+[namespaces]: https://secure.php.net/language.namespaces
+[psr0]: https://www.php-fig.org/psr/psr-0/
+[psr4]: https://www.php-fig.org/psr/psr-4/

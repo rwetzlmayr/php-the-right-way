@@ -5,49 +5,50 @@ schlechte Methoden und schlechten Code verbreiten. Das kann nicht so weitergehen
 einfach lesbare Schnellreferenz für PHP und enthält die besten Verfahren, anerkannte Code-Standards und Links zu
 maßgeblichen Anleitungen im Web.
 
+_There is no canonical way to use PHP_. This website aims to introduce new PHP
+developers to some topics which they may not discover until it is too late, and aims
+to give seasoned pros some fresh ideas on those topics they've been doing for years
+without ever reconsidering. This website will also not tell you which tools to use, but
+instead offer suggestions for multiple options, when possible explaining the differences
+in approach and use-case.
+
+This is a living document and will continue to be updated with more helpful information
+and examples as they become available.
+
 ## Übersetzungen
 
-_PHP: Der richtige Weg_ wurde in viele verschiedene Spachen übersetzt:
+_PHP: Der richtige Weg_ wurde (oder wird demnächst) in viele verschiedene Spachen übersetzt:
 
-* [Englisch](http://www.phptherightway.com)
-* [Bulgarisch](http://bg.phptherightway.com/)
-* [Chinesisch (vereinfacht)](http://laravel-china.github.io/php-the-right-way/)
-* [Chinesisch (traditionell)](http://laravel-taiwan.github.io/php-the-right-way)
-* [Französisch](http://eilgin.github.io/php-the-right-way/)
-* [Deutsch](http://rwetzlmayr.github.io/php-the-right-way/)
-* [Indonesisch](http://id.phptherightway.com/)
-* [Italienisch](http://it.phptherightway.com)
-* [Japanisch](http://ja.phptherightway.com)
-* [Koreanisch](http://modernpug.github.io/php-the-right-way/)
-* [Persisch](http://novid.github.io/php-the-right-way/)
-* [Polnisch](http://pl.phptherightway.com/)
-* [Portugiesisch](http://br.phptherightway.com/)
-* [Rumänisch](https://bgui.github.io/php-the-right-way/)
-* [Russisch](http://getjump.github.io/ru-php-the-right-way)
-* [Serbisch](http://smatejic.github.io/php-the-right-way/)
-* [Slowenisch](http://sl.phptherightway.com/)
-* [Spanisch](http://es.phptherightway.com)
-* [Thailändisch](https://apzentral.github.io/php-the-right-way/)
-* [Türkisch](http://hkulekci.github.io/php-the-right-way/)
-* [Ukrainisch](http://iflista.github.com/php-the-right-way/)
+* [Deutsch](https://rwetzlmayr.github.io/php-the-right-way/)
+* [English](http://www.phptherightway.com)
+* [Español](http://phpdevenezuela.github.io/php-the-right-way)
+* [Français](http://eilgin.github.io/php-the-right-way/)
+* [Indonesia](http://id.phptherightway.com)
+* [Italiano](http://it.phptherightway.com)
+* [Polski](http://pl.phptherightway.com)
+* [Português do Brasil](http://br.phptherightway.com)
+* [Română](https://bgui.github.io/php-the-right-way/)
+* [Slovenščina](http://sl.phptherightway.com)
+* [Srpski](http://phpsrbija.github.io/php-the-right-way/)
+* [Türkçe](http://hkulekci.github.io/php-the-right-way/)
+* [български](http://bg.phptherightway.com)
+* [Русский язык](http://getjump.github.io/ru-php-the-right-way)
+* [Українська](http://iflista.github.com/php-the-right-way)
+* [العربية](https://adaroobi.github.io/php-the-right-way/)
+* [فارسى](http://novid.github.io/php-the-right-way/)
+* [ภาษาไทย](https://apzentral.github.io/php-the-right-way/)
+* [한국어판](http://modernpug.github.io/php-the-right-way)
+* [日本語](http://ja.phptherightway.com)
+* [简体中文](http://laravel-china.github.io/php-the-right-way/)
+* [繁體中文](http://laravel-taiwan.github.io/php-the-right-way)
 
-## Haftungsausschluss
+## Book
 
-_Es gibt keinen vorschriftsmäßigen Einsatz von PHP_. Abgesehen davon ist diese Website eine bescheidene Darstellung der
-besten Methoden, möglicher Alternativen und guter Information. Ihr Ziel ist es, neue PHP-Entwickler anzuleiten und altgediente Profis mit frischen Ideen zu versorgen.
-
-Dieses Dokument lebt und wird fortlaufend mit weiteren hilfreichen Informationen und Beispielen ergänzt, sobald sie verfügbar werden.
+The most recent version of _PHP: The Right Way_ is also available in PDF, EPUB and MOBI formats. [Go to Leanpub][1]
 
 ## Mitarbeiten
 
-Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu machen! [Arbeite auf GitHub mit][1].
+Hilf mit, diese Website zur besten Informationsquelle für PHP-Programmierer zu machen! [Arbeite auf GitHub mit][2]
 
-## Verbreite die Botschaft!
-
-Für _PHP: Der richtige Weg_ gibt es Bannergrafiken, die du auf deiner Website verwenden kannst. Demonstriere deine
-Unterstützung und zeige neuen PHP-Entwicklern, wo sie gute Informationen finden können!
-
-[Bannergrafiken][2]
-
-[1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
-[2]: ./banners.html
+[1]: https://leanpub.com/phptherightway
+[2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages

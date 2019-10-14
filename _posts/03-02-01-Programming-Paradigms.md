@@ -1,6 +1,7 @@
 ---
 title: Programmierparadigmen
 isChild: true
+anchor:  programming_paradigms
 ---
 
 ## Programmierparadigmen {#programming_paradigms_title}
@@ -29,23 +30,26 @@ Mit PHP 5.4 kam die Fähigkeit, Closures an den Gültigkeitsbereich eines Objekt
 * [Mehr züber die Klasse `Closure`][closure-class]
 * [Weitere Details im Closures RFC][closures-rfc]
 * [Mehr zu Callables][callables]
-* [Mehr über den dynamischen Aufruf von Funktionen über `call_user_func_array`][call-user-func-array]
+* [Mehr über den dynamischen Aufruf von Funktionen über `call_user_func_array()`][call-user-func-array]
 
 ### Meta-Programmierung
 
-PHP unterstützt verschiedene Formen der Meta-Programmierung über Mechanismen wie das Reflection API und magische Methoden. Die magischen Methoden wie etwa `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` etc. erlauben Entwicklern, sich in das Verhalten von Klassen einzuhängen. Ruby-Entwickler behaupten oft, dass in PHP `method_missing` fehlt, aber diese ist als `__call()` and `__callStatic()` vorhanden.
+PHP unterstützt verschiedene Formen der Meta-Programmiereung über Mechanismen wie das Reflection API und magische Methoden.
+Die magischen Methoden wie etwa `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` etc. erlauben Entwicklern,
+sich in das Verhalten von Klassen einzuhängen. Ruby-Entwickler behaupten oft, dass in PHP `method_missing` fehlt, aber
+diese ist als `__call()` and `__callStatic()` vorhanden.
 
 * [Mehr über magische Methoden][magic-methods]
 * [Mehr über Reflection][reflection]
+* [Read about Overloading][overloading]
 
-[namespaces]: http://php.net/manual/de/language.namespaces.php
-[overloading]: http://php.net/manual/de/language.oop5.overloading.php
-[oop]: http://www.php.net/manual/de/language.oop5.php
-[anonymous-functions]: http://www.php.net/manual/de/functions.anonymous.php
-[closure-class]: http://php.net/manual/de/class.closure.php
-[callables]: http://php.net/manual/de/language.types.callable.php
-[magic-methods]: http://php.net/manual/de/language.oop5.magic.php
-[reflection]: http://www.php.net/manual/de/intro.reflection.php
-[traits]: http://www.php.net/traits
-[call-user-func-array]: http://php.net/manual/de/function.call-user-func-array.php
+[oop]: https://secure.php.net/language.oop5
+[traits]: https://secure.php.net/language.oop5.traits
+[anonymous-functions]: https://secure.php.net/functions.anonymous
+[closure-class]: https://secure.php.net/class.closure
 [closures-rfc]: https://wiki.php.net/rfc/closures
+[callables]: https://secure.php.net/language.types.callable
+[call-user-func-array]: https://secure.php.net/function.call-user-func-array
+[magic-methods]: https://secure.php.net/language.oop5.magic
+[reflection]: https://secure.php.net/intro.reflection
+[overloading]: https://secure.php.net/language.oop5.overloading

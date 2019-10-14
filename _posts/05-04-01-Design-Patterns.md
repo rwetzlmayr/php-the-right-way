@@ -1,6 +1,6 @@
 ---
 isChild: true
-title: Entwurfsmuster
+anchor:  design_patterns
 ---
 
 ## Entwurfsmuster {#design_patterns_title}
@@ -9,4 +9,6 @@ Beim Entwurf einer Anwendung ist es hilfreich, gebräuchliche Entwurfsmuster fü
 
 Wird ein Framework eingesetzt, basiert der Großteil der übergeordneten Code- und Projektstruktur auf diesem Framework, und viele Entscheidungen sind vorweg getroffen. Aber die Verantwortung für die Auswahl der besten Muster für den eigenen Code liegt bei dir. Wenn du andererseits kein Framework einsetzt, musst du selbst Muster finden, die zum Typ und zur Größe der Anwendung passen.
 
-* Mehr zu [Entwurfsmustern](./pages/Design-Patterns.html)
+You can learn more about PHP design patterns and see working examples at:
+
+<https://designpatternsphp.readthedocs.io/>

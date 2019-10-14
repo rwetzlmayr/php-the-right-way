@@ -1,21 +1,22 @@
 ---
 title: Schnittstelle für die Befehlszeile
 isChild: true
+anchor:  command_line_interface
 ---
 
 ## Schnittstelle für die Befehlszeile {#command_line_interface_title}
 
 PHP wurde primär für die Erstellung von Web-Anwendungen geschaffen, aber es ist auch beim verfassen von Befehlszeilenprogrammen (CLI; command line interface) nützlich. PHP-Programme für die Befehlszeile können dir helfen, allgemeine Aufgaben wie Softwaretests, Ausrollung und Administratives zu automatisieren.
 
-CLI-PHP-Programme sind mächtig, weil sie den Code deiner Anwendung direkt ohne Web-Oberfläche benutzen können. Achte nur darauf, dass deine CLI-Scripts nicht im öffentlichen Webverzeichnis liegen!
+CLI-PHP-Programme sind mächtig, weil sie den Code deiner Anwendung direkt ohne Web-Oberfläche benutzen können. Achte nur darauf, dass deine CLI-Scripts **nicht** im öffentlichen Webverzeichnis liegen!
 
 Versuche, PHP von der Befehlszeile aus aufzurufen:
 
-{% highlight bash %}
+{% highlight console %}
 > php -i
 {% endhighlight %}
 
-Die Option `-i` gibt die PHP-Konfiguration ähnlich wie die Funktion [`phpinfo`][phpinfo] aus.
+Die Option `-i` gibt die PHP-Konfiguration ähnlich wie die Funktion [`phpinfo()`][phpinfo] aus.
 
 Die Option `-a` startet eine interaktive Shell ähnlich wie IRB in Ruby oder Pythons interaktive Shell. Es gibt einige andere nützliche [Optionen für die Befehlszeile][cli-options].
 
@@ -24,34 +25,33 @@ Schreiben wir doch ein CLI-Programm für "Hello, $name". Erstelle eine Datei `he
 {% highlight php %}
 <?php
 if ($argc !== 2) {
-    echo "Usage: php hello.php [name].\n";
+    echo "Usage: php hello.php <name>.\n";
     exit(1);
 }
 $name = $argv[1];
 echo "Hello, $name\n";
 {% endhighlight %}
 
-PHP erstellt zwei spezielle Variablen auf Basis der Argumente, mit denen dein Script gestartet wird. [`$argc`][argc] ist eine Integer-Variable und enthält die *Anzahl* der Argumente; [`$argv`][argv] ist ein eine Array-Variable, die den *Wert* jedes Arguments enthält. Das erste Argument ist immer der Name deines PHP-Scripts, in unserem Fall also `hello.php`.
+PHP erstellt zwei spezielle Variable auf Basis der Argument, mit denen dein Script gestartet wird. [`$argc`][argc] ist eine Integer-Variable
+und enthält die *Anzahl* der Argumente; [`$argv`][argv] ist ein eine Array-Variable, die den *Wert* jedes Arguments enthält. Das erste
+Argument ist immer der Name deines PHP-Scripts, in unserem Fall also `hello.php`.
 
 Der Ausdruck `exit()` wird mit einer Zahl ungleich Null aufgerufen, um die Shell davon zu informieren, dass der Befehl gescheitert ist. Gebräuchliche Exitcodes findet man [hier][exit-codes].
 
 Starte unser Script von der Befehlszeile:
 
-{% highlight bash %}
+{% highlight console %}
 > php hello.php
-Usage: php hello.php [name]
+Usage: php hello.php <name>
 > php hello.php world
 Hello, world
 {% endhighlight %}
 
-
  * [Mehr über den Einsatz von PHP auf der Befehlszeile][php-cli]
- * [Mehr über die Einrichtung von Windows für den Einsatz von PHP auf der Befehlszeile][php-cli-windows]
 
-[phpinfo]: http://php.net/manual/de/function.phpinfo.php
-[cli-options]: http://www.php.net/manual/de/features.commandline.options.php
-[argc]: http://php.net/manual/de/reserved.variables.argc.php
-[argv]: http://php.net/manual/de/reserved.variables.argv.php
-[php-cli]: http://php.net/manual/de/features.commandline.php
-[php-cli-windows]: http://www.php.net/manual/de/install.windows.commandline.php
-[exit-codes]: http://www.gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits
+[phpinfo]: https://secure.php.net/function.phpinfo
+[cli-options]: https://secure.php.net/features.commandline.options
+[argc]: https://secure.php.net/reserved.variables.argc
+[argv]: https://secure.php.net/reserved.variables.argv
+[exit-codes]: https://www.gsp.com/cgi-bin/man.cgi?section=3&amp;topic=sysexits
+[php-cli]: https://secure.php.net/features.commandline.options
